@@ -18,8 +18,8 @@
 }
 
 .icon {
-  height: 200px;
   background-color: #61dafb;
+  min-height: 80px;
   width: 100%;
 }
 
