@@ -10,6 +10,9 @@ export const Skills = () => {
         <h2 className={s.title}>Skills:</h2>
         <div className={s.skills}>
           <Skill title={'JS'} description={'Descrsdfksmdflk lksdmflsdfmlksdf mskdlsmdkfiptio nDescrsdfk smdflklksdmf lsdfmlksdfms kdlsmdkfiption'}/>
+          <Skill title={'JS'} description={'Descrsdfksmdflk lksdmflsdfmlksdf mskdlsmdkfiptio nDescrsdfk smdflklksdmf lsdfmlksdfms kdlsmdkfiption'}/>
+          <Skill title={'JS'} description={'Descrsdfksmdflk lksdmflsdfmlksdf mskdlsmdkfiptio nDescrsdfk smdflklksdmf lsdfmlksdfms kdlsmdkfiption'}/>
+          <Skill title={'JS'} description={'Descrsdfksmdflk lksdmflsdfmlksdf mskdlsmdkfiptio nDescrsdfk smdflklksdmf lsdfmlksdfms kdlsmdkfiption'}/>
           <Skill title={'CSS'} description={'Descrsdf ksmdflklksdmf lsdfmlksdfmsk dlsmdkfiption'}/>
           <Skill title={'REACT'} description={'Descrsdfksmdflk lksdmflsdfmlks dfmskdlsmd kfiption Descrsdfksmdfl klksdmflsdfmlksdfm skdlsmdkf iption'}/>
         </div>

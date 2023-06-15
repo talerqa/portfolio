@@ -6,20 +6,26 @@
   width: 200px;
   background-color: rebeccapurple;
   text-align: center;
-
+  margin-top: 7px;
 }
 
-.button {
-
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #61dafb;
+  height: 100px;
+  width: 100%;
 }
 
-.information {
+.projectInformation {
   border: 1px solid red;
 }
 
 .icon {
+  display: block;
   background-color: #61dafb;
-  min-height: 80px;
+  height: 100%;
   width: 100%;
 }
 
@@ -29,5 +35,11 @@
 
 .description {
   margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
   align-items: center;
+}
+
+.button {
+
 }

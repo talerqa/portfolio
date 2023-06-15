@@ -1,26 +1,25 @@
 .contactBlock {
   background-color: rgba(255, 130, 130, 0.62);
   height: 100vh;
-}
-
-.container {
-  flex-direction: row;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.formInfo {
-  display: flex;
+.container {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  display: flex;
   align-self: center;
   border: 1px solid white;
-  width: 50%;
-  height: 300px
+  width: 100%;
+  height: 550px
 }
 
 .title {
   align-self: center;
+  background-color: red;
 }
 
 .form {
@@ -42,9 +41,9 @@
 }
 
 .buttonSend {
+  margin-top: 5px;
   border: 1px solid olivedrab;
-  display: block;
-  width: 40%;
-  height: 20%;
+  width: 100px;
+  height: 30px;
   align-self: center;
 }
