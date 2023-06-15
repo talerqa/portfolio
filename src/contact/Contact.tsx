@@ -10,7 +10,7 @@ export const Contact = () => {
           <form className={s.form}>
             <input className={s.input} type="text"/>
             <input className={s.input} type="text"/>
-            <textarea className={s.textarea} >
+            <textarea className={s.textarea}>
             </textarea>
           </form>
           <button className={s.buttonSend}>

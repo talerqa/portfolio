@@ -14,7 +14,7 @@ export const Skills = () => {
           <Skill title={'JS'} description={'Descrsdfksmdflk lksdmflsdfmlksdf mskdlsmdkfiptio nDescrsdfk smdflklksdmf lsdfmlksdfms kdlsmdkfiption'}/>
           <Skill title={'JS'} description={'Descrsdfksmdflk lksdmflsdfmlksdf mskdlsmdkfiptio nDescrsdfk smdflklksdmf lsdfmlksdfms kdlsmdkfiption'}/>
           <Skill title={'CSS'} description={'Descrsdf ksmdflklksdmf lsdfmlksdfmsk dlsmdkfiption'}/>
-          <Skill title={'REACT'} description={'Descrsdfksmdflk lksdmflsdfmlks dfmskdlsmd kfiption Descrsdfksmdfl klksdmflsdfmlksdfm skdlsmdkf iption'}/>
+          <Skill title={'REACT'} description={'Descrsdfksmdflk lksdmflsdfmlks dfmskdlsmd kfiption Descrsdfksmdfl klksdmflsd fmlksdfm skdlsmdkf iption'}/>
         </div>
       </div>
     </div>

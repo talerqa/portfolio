@@ -17,6 +17,7 @@
   height: 550px
 }
 
+
 .title {
   align-self: center;
   background-color: red;
@@ -29,15 +30,16 @@
   align-items: center;
   justify-content: space-around;
   height: 200px;
+  width: 270px;
 }
 .input {
   display: block;
-  width:  90%;
+  width:  100%;
 }
 .textarea {
   display: block;
   resize: none;
-  width: 90%;
+  width: 100%;
 }
 
 .buttonSend {
@@ -46,4 +48,10 @@
   width: 100px;
   height: 30px;
   align-self: center;
+}
+
+@media screen and (max-width: 320px) {
+  .form {
+    width: 100%;
+  }
 }
