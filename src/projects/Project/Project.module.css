@@ -1,12 +1,14 @@
 .project {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  width: 200px;
+  width: 275px;
   background-color: rebeccapurple;
   text-align: center;
   margin-top: 7px;
+  color: rgba(33, 37, 41, 1);
 }
 
 .imgContainer {
