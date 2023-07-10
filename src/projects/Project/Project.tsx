@@ -1,13 +1,17 @@
 import React from 'react';
-import s from './Project.module.css';
+import s from './Project.module.scss';
 
-export const  Project = (props: any) => {
+type ProjectProps = {
+  style: React.CSSProperties
+  title: string
+  description: string
+}
+
+export const Project = (props: ProjectProps) => {
   return (
     <div className={s.project}>
-      <div className={s.imgContainer}>
-
+      <div className={s.image} style={props.style}>
         <button className={s.button}>View</button>
-
       </div>
       <div className={s.information}>
         <h4 className={s.title}>{props.title}</h4>

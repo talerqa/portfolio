@@ -4,20 +4,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  width: 275px;
-  background-color: rebeccapurple;
+  width: 415px;
   text-align: center;
-  margin-top: 7px;
+
+
+  margin: 10px;
   color: rgba(33, 37, 41, 1);
+
 }
 
-.imgContainer {
+.image {
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #61dafb;
-  height: 100px;
+  height: 407px;
   width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.image:before {
+  position: absolute;
+  content: '';
+  background-color: black;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
 }
 
 .projectInformation {
@@ -31,8 +49,16 @@
   width: 100%;
 }
 
+.information {
+  padding: 20px 0;
+  background-color:rgba(145, 148, 163, .1);
+}
+
 .title {
   margin: 0;
+  line-height: 1.8;
+  font-weight: 600;
+  font-size: 1.325rem;
 }
 
 .description {
@@ -43,5 +69,6 @@
 }
 
 .button {
-
+  position: relative;
+  z-index: 1;
 }
