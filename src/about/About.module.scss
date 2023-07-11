@@ -1,0 +1,64 @@
+@import "./../common/styles/sass/variables";
+
+.aboutBlock {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-self: center;
+  width: 100%;
+  //justify-content: flex-start;
+  //align-items: center;
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+
+    .aboutMeSummary {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      max-width: 850px;
+      padding: 5px;
+      box-sizing: border-box;
+      font-weight: 600;
+      .aboutMeTitle {
+        font-size: 28px;
+        color: $textColor;
+      }
+
+      .aboutMeName {
+        color: #20c997;
+      }
+
+      .aboutMeText {
+      font-weight: 400;
+      }
+    }
+
+    .aboutMeInfo {
+      .infoList {
+        .infoItem {
+          .infoText {
+
+          }
+        }
+      }
+
+      .downloadCv {
+      }
+    }
+  }
+}
