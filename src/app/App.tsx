@@ -7,14 +7,16 @@ import {Projects} from '../projects/Projects';
 import {Contact} from '../contact/Contact';
 import {Footer} from '../footer/Footer';
 import About from '../about/About';
+import {state} from './state'
 
+console.log(state.skills)
 function App() {
   return (
     <div className="App">
       <Header/>
       <Main/>
       <About/>
-      <Skills/>
+      <Skills state={state.skills}/>
       <Projects/>
       <Contact/>
       <Footer/>

@@ -5,16 +5,18 @@
   align-items: center;
   justify-content: start;
   width: 250px;
-  background-color: rebeccapurple;
   text-align: center;
   padding: 5px;
   box-sizing: border-box;
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 60px;
-  background-color: gold;
+  text-align: center;
 }
 
 .title {

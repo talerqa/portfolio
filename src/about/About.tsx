@@ -28,7 +28,9 @@ const About = () => {
               </li>
               <li className={s.infoItem}>
                 <span className={s.infoText}>Email: </span>
-                talerqa@gmail.com
+                <a  href="mailto:talerqa@gmail.com" className={s.infoEmail}>
+                  talerqa@gmail.com
+                </a>
               </li>
               <li className={s.infoItem}>
                 <span className={s.infoText}>Age: </span>

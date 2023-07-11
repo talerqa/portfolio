@@ -31,10 +31,12 @@
       flex-direction: column;
       justify-content: start;
       max-width: 850px;
-      padding: 5px;
+      padding: 0 12px;
       box-sizing: border-box;
       font-weight: 600;
+      margin-right: 30px;
       .aboutMeTitle {
+        margin: 0 0 16px;
         font-size: 28px;
         color: $textColor;
       }
@@ -44,20 +46,47 @@
       }
 
       .aboutMeText {
-      font-weight: 400;
+        margin: 0 0 16px;
+        font-weight: 400;
+        text-align: justify;
       }
     }
 
     .aboutMeInfo {
-      .infoList {
-        .infoItem {
-          .infoText {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 0 12px;
+      box-sizing: border-box;
 
+      .infoList {
+        padding: 0 10px;
+        list-style: none;
+        .infoItem {
+          padding: 12px 0;
+          font-weight: 400;
+          .infoText {
+            font-weight: 600;
+          }
+          .infoEmail {
+            color: #20c997;
           }
         }
       }
 
       .downloadCv {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        border-width: 2px;
+        font-weight: 500;
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+        background-color: #1baa80;
+        border-color: #1baa80;
+        padding: 12.80px 41.6px;
+        box-shadow: 0 5px 15px rgba(0,0,0,.3);
       }
     }
   }
