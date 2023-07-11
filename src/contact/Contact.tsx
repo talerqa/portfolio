@@ -1,6 +1,6 @@
 import React from 'react';
 import styleContainer from './../common/styles/Container.module.css'
-import s from './Contact.module.css'
+import s from './Contact.module.scss'
 import {Title} from '../common/components/title/Title';
 
 export const Contact = () => {

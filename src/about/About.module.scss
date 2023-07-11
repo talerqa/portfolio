@@ -1,7 +1,8 @@
 @import "./../common/styles/sass/variables";
 
 .aboutBlock {
-  background-color: white;
+  background-color: $bgColor;
+  opacity: 1;
   height: 100vh;
   display: flex;
   justify-content: center;

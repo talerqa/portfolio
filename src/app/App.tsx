@@ -9,7 +9,6 @@ import {Footer} from '../footer/Footer';
 import About from '../about/About';
 import {state} from './state'
 
-console.log(state.skills)
 function App() {
   return (
     <div className="App">
@@ -19,7 +18,7 @@ function App() {
       <Skills state={state.skills}/>
       <Projects/>
       <Contact/>
-      <Footer/>
+      <Footer state={state.socialLinks}/>
     </div>
   );
 }

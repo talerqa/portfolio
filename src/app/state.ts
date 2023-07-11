@@ -1,20 +1,28 @@
-import {SvgNameSkillsType} from '../common/components/SvgSelector/SvgSelector';
+import {SocialSvgLinkType, SvgNameSkillsType} from '../common/components/SvgSelector/SvgSelector';
 
 export const state: StateType = {
-  headerSocialLinks: {
-    git: {
+  socialLinks: [
+    {
+      title: 'gitHub',
       href: 'https://github.com/talerqa',
-      svgName: 'git_hub'
+      svgName: 'gitHub'
     },
-    instagram: {
+    {
+      title: 'instagram',
       href: 'https://www.instagram.com/talerqa/',
       svgName: 'instagram'
     },
-    linkedin: {
+    {
+      title: 'linkedin',
       href: 'https://www.linkedin.com/in/aleksei-tarelko-607862259/',
       svgName: 'linkedin'
+    },
+    {
+      title: 'codeWars',
+      href: 'https://www.codewars.com/users/talerqa',
+      svgName: 'codeWars'
     }
-  },
+  ],
   skills: [
     {
       title: 'React',
@@ -89,6 +97,11 @@ export const state: StateType = {
       svgName: 'git',
       description: 'A free and open source distributed version control system designed to process any project quickly and efficiently.'
     },
+    {
+      title: 'Node JS',
+      svgName: 'nodeJs',
+      description: 'Node.js is an out-of-browser JavaScript runtime that allows you to write server-side code for web pages and web applications.'
+    },
   ]
 }
 export type SkillTitleType =
@@ -106,14 +119,21 @@ export type SkillTitleType =
   | 'Storybook'
   | 'Unit Testing'
   | 'Formik'
+  | 'Node JS'
 
 
 export type StateType = {
-  headerSocialLinks: any
+  socialLinks: Array<SocialLinksType>
   skills: Array<SkillsType>
 }
 export type SkillsType = {
   title: SkillTitleType
   svgName: SvgNameSkillsType
   description: string
+}
+
+export type SocialLinksType = {
+  title: SocialSvgLinkType
+  href: string
+  svgName: SocialSvgLinkType
 }

@@ -17,7 +17,7 @@ export const Header = () => {
             <SvgSelector svgName={'linkedin'}/>
           </a>
           <a href="#" className={s.link}>
-            <SvgSelector svgName={'git_hub'}/>
+            <SvgSelector svgName={'gitHub'}/>
           </a>
           <a href="#" className={s.link}>
             <SvgSelector svgName={'instagram'}/>
