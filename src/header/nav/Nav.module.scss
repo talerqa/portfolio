@@ -1,0 +1,32 @@
+@import "./../../common/styles/sass/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 220px;
+
+  .item {
+    list-style: none;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+
+  .link {
+    color: $textColor;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 13.6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .active {
+    color: #20c997;
+  }
+
+}

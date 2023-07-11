@@ -1,0 +1,29 @@
+.headerBlock {
+  width: 100%;
+  height: 80px;
+  background-color: #f8f9fa;
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 3px 4px rgba(0,0,0,.2);
+}
+
+.headerСontainer {
+  display: flex;
+  background-color: #f8f9fa;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLinks {
+  display: flex;
+
+  .link {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 8px;
+    text-decoration: none;;
+    cursor: pointer;
+  }
+}
+

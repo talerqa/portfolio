@@ -1,0 +1,47 @@
+.mainBlock {
+  background-color: rgba(232, 235, 238, 0.5);
+  opacity: 1;
+  height: 100vh;
+}
+
+.mainContainer {
+
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+
+.textBlock {
+  width: 500px;
+
+  .greeting {
+    font-size: 28px;
+    margin: 0 0 16px;
+
+  }
+
+  .title {
+    margin: 0;
+    font-size: 48px;
+  }
+
+  .skills {
+    font-size: 28px;
+    margin: 0 0 16px;
+  }
+
+  .based {
+    font-size: 18px;
+    margin: 0 0 24px;
+  }
+}
+
+.photo {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: rebeccapurple;
+}
