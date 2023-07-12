@@ -1,54 +1,140 @@
 @import "./../common/styles/sass/variables";
 
 .contactBlock {
-  background-color: $bgColorSecond;
   opacity: 1;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  align-self: center;
   width: 100%;
-  height: 550px
-}
+  min-height: 80vh;
+  padding: 100px 0;
+  background-color: $bgColorSecond;
 
-.title {
-  align-self: center;
-}
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 200px;
-  width: 360px;
-}
-.input {
-  display: block;
-  width:  100%;
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 
-}
-.textarea {
-  display: block;
-  resize: none;
-  width: 100%;
+    .contactInfo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
 
-}
+      .contactFollow {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 30%;
+        padding: 0 12px;
+        box-sizing: border-box;
+        font-weight: 600;
+        margin-right: 30px;
 
-.buttonSend {
-  margin-top: 5px;
-  border: 1px solid olivedrab;
-  width: 100px;
-  height: 30px;
-  align-self: center;
+        .followTitle {
+
+        }
+
+
+        .followHire {
+          margin: 0;
+          font-weight: 400;
+        }
+
+        .followPhone {
+          margin: 0 0 10px;
+          font-weight: 400;
+        }
+
+        .followEmail {
+          margin: 0 0 10px;
+          font-weight: 400;
+        }
+
+        .items {
+          width: 70%;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+      }
+
+      .contactForm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        padding: 0 12px;
+        box-sizing: border-box;
+        width: 60%;
+
+
+        .formTitle {
+          margin: 0;
+          font-size: 21px;
+          text-transform: capitalize;
+        }
+
+        .form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          height: 200px;
+          width: 100%;
+          margin: 0 auto;
+
+          .inputName {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 71.3%;
+
+            .input {
+              display: block;
+              font-size: 20px;
+              font-weight: 400;
+              flex: 0 0 auto;
+              width: 70%;
+
+              &::placeholder, &[placeholder] {
+                font-size: 16px;
+                color: #656565;
+                opacity: 0.7;
+                padding: 5px;
+              }
+
+            }
+          }
+
+          .textarea {
+            display: block;
+            resize: none;
+            width: 100%;
+            padding: 0.81rem 0.96rem;
+
+            &::placeholder, &[placeholder] {
+              color: #656565;
+              opacity: 0.7;
+
+              font-size: 16px;
+              font-family: $fontFamily;
+            }
+
+          }
+        }
+      }
+
+    }
+
+    .buttonSend {
+      margin-top: 5px;
+      width: 100px;
+      height: 30px;
+      align-self: center;
+    }
+
+  }
 }
 
 @media screen and (max-width: 430px) {

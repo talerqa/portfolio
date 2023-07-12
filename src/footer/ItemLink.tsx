@@ -9,9 +9,9 @@ type ItemLinkPropsType = {
 
 export const ItemLink = (props: ItemLinkPropsType) => {
   return (
-    <div className={s.item}>
+    <a className={s.item} href={props.link}  target="_blank" >
       <SvgSelector svgName={props.svgName}/>
-    </div>
+    </a>
 
   );
 };

@@ -18,6 +18,7 @@ export const Skills = (props: SkillsPropsType) => {
           {
             props.state.map(skill => {
               return <Skill title={skill.title}
+
                             svgName={skill.svgName}
                             description={skill.description}/>
             })

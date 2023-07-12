@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className={s.aboutBlock}>
       <div className={stylesContainer.container + ' ' + s.container}>
-        <Title title={'Know Me More'}/>
+        <Title title={'Know Me More'} />
         <div className={s.aboutMe}>
           <div className={s.aboutMeSummary}>
             <h2 className={s.aboutMeTitle}>I'm <span className={s.aboutMeName}>Aleksei Tarelko</span> a Frontend

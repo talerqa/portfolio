@@ -12,9 +12,10 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
   return (
     <div className={s.skill}>
-      <div className={s.icon}><SvgSelector svgName={props.svgName}/></div>
+      <div className={s.icon}>
+        <SvgSelector svgName={props.svgName}/>
+      </div>
       <h3 className={s.title}>{props.title}</h3>
-
       <span className={s.description}>{props.description}</span>
     </div>
   );

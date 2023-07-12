@@ -1,7 +1,7 @@
 .item {
+  display: block;
   margin-top: 5px;
   padding: 10px;
-  background-color: olive;
   width: 30px;
   height: 30px;
 }

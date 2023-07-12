@@ -8,9 +8,9 @@ export const state: StateType = {
       svgName: 'gitHub'
     },
     {
-      title: 'instagram',
-      href: 'https://www.instagram.com/talerqa/',
-      svgName: 'instagram'
+      title: 'codeWars',
+      href: 'https://www.codewars.com/users/talerqa',
+      svgName: 'codeWars'
     },
     {
       title: 'linkedin',
@@ -18,9 +18,15 @@ export const state: StateType = {
       svgName: 'linkedin'
     },
     {
-      title: 'codeWars',
-      href: 'https://www.codewars.com/users/talerqa',
-      svgName: 'codeWars'
+      title: 'gmail',
+      href: 'mailto:talerqa@gmail.com',
+      svgName: 'gmail'
+    },
+
+    {
+      title: 'telegram',
+      href: 'https://t.me/talerqa',
+      svgName: 'telegram'
     }
   ],
   skills: [

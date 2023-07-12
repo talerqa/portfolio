@@ -1,0 +1,27 @@
+.footerBlock {
+  width: 100%;
+  min-height: 20%;
+  padding: 10px 0;
+
+  .footerСontainer {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .information {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copyright, .developed {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
