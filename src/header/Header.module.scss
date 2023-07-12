@@ -12,6 +12,14 @@
   background-color: #f8f9fa;
   align-items: center;
   justify-content: space-between;
+
+  .burgerMenu {
+    display: none;
+    @media (max-width: 785px) {
+      display: block;
+    }
+  }
+
 }
 
 .headerLinks {

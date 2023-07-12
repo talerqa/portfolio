@@ -10,6 +10,8 @@ import About from '../about/About';
 import {state} from './state'
 
 function App() {
+
+
   return (
     <div className="App">
       <Header state={state.socialLinks} />

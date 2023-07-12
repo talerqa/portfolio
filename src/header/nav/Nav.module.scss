@@ -4,11 +4,14 @@
   display: flex;
   justify-content: space-between;
   min-width: 220px;
-
+  flex-wrap: nowrap;
   .item {
     list-style: none;
     margin-left: 2px;
     margin-right: 2px;
+    @media (max-width: 785px)  {
+      display: none;
+    }
   }
 
 
@@ -28,5 +31,4 @@
   .active {
     color: #20c997;
   }
-
 }
