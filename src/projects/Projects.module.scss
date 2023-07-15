@@ -8,7 +8,9 @@
   opacity: 1;
   color: $textColor;
   padding: 100px 0;
-
+  @media (max-width: 1070px) {
+    padding: 45px 0;
+  }
   .projectContainer {
     flex-direction: column;
     justify-content: flex-start;

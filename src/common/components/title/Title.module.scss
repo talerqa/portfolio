@@ -11,6 +11,9 @@
     line-height: 94px;
     height: 150px;
     margin: 0;
+    @media (max-width: 872px) {
+      height: 110px;
+    }
     .separatorLine {
       display: block;
       text-align: center;

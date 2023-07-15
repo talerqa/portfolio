@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './ItemLink.module.css';
+import s from './ItemLink.module.scss';
 import {SocialSvgLinkType, SvgSelector} from '../common/components/SvgSelector/SvgSelector';
 
 type ItemLinkPropsType = {

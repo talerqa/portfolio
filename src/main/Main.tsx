@@ -13,7 +13,7 @@ export const Main = () => {
           <p className={s.based}>based in Minsk, Belarus</p>
         </div>
         <div className={s.photo}>
-          <img src="" alt=""/>
+          <img className={s.image} src="" alt=""/>
         </div>
       </div>
     </div>

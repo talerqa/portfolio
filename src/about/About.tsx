@@ -10,7 +10,8 @@ const About = () => {
         <Title title={'Know Me More'} />
         <div className={s.aboutMe}>
           <div className={s.aboutMeSummary}>
-            <h2 className={s.aboutMeTitle}>I'm <span className={s.aboutMeName}>Aleksei Tarelko</span> a Frontend
+            <h2 className={s.aboutMeTitle}>I'm <span className={s.aboutMeName}> Aleksei Tarelko </span> a
+              Frontend
               Developer</h2>
             <p className={s.aboutMeText}>I'm a developer with specializing in building attractive and user-friendly web
               applications using React, Redux, TypeScript, JavaScript, HTML&CSS, and SCSS. With a strong understanding

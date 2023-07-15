@@ -1,7 +1,11 @@
 .mainBlock {
   background-color: rgba(232, 235, 238, 0.5);
   opacity: 1;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 200px 0;
+  @media (max-width: 1070px) {
+    padding: 140px 0 0 0;
+  }
 }
 
 .mainContainer {
@@ -9,6 +13,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
 
 
 }
@@ -16,7 +21,8 @@
 
 .textBlock {
   width: 500px;
-  padding-top: 100px;
+
+
 
   .greeting {
     font-size: 28px;
@@ -31,6 +37,7 @@
   .title {
     margin: 0;
     font-size: 48px;
+    text-align: center;
     @media (max-width: 602px) {
       text-align: center;
     }
@@ -43,6 +50,7 @@
   .skills {
     font-size: 28px;
     margin: 0 0 16px;
+    text-align: center;
     @media (max-width: 353px) {
       font-size: 24px;
     }
@@ -50,6 +58,7 @@
 
   .based {
     font-size: 18px;
+    text-align: center;
     margin: 0 0 24px;
     @media (max-width: 602px) {
       text-align: center;
@@ -59,9 +68,13 @@
 
 .photo {
   border-radius: 50%;
+  margin-bottom: 20px;
   width: 400px;
   height: 400px;
+
   background-color: gray;
+  margin-left: 10px;
+
   @media (max-width: 490px) {
     width: 270px;
     height: 270px;
@@ -69,5 +82,9 @@
   @media (max-width: 350px) {
     width: 240px;
     height: 240px;
+  }
+  .image {
+    display: block;
+    width: 100%;
   }
 }

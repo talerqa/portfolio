@@ -7,6 +7,9 @@
   padding: 100px 0;
   background-color: $bgColorSecond;
 
+  @media (max-width: 1070px) {
+    padding: 45px 0;
+  }
 
   .container {
     flex-direction: column;
@@ -16,46 +19,84 @@
 
     .contactInfo {
       display: flex;
-
       justify-content: space-around;
       width: 100%;
+      @media (max-width: 872px) {
+        flex-wrap: wrap;
+      }
 
       .contactFollow {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        width: 40%;
-        padding: 0 12px;
+        width: 60%;
+        padding: 20px 12px;
         box-sizing: border-box;
         font-weight: 600;
         margin-right: 30px;
+        @media (max-width: 872px) {
+          width: 80%;
+          margin-right: 0;
+          margin-bottom: 40px;
+        }
+        @media (max-width: 520px) {
+          width: 100%;
+          padding: 20px 5px;
+        }
 
         .followTitle {
-
+          @media (max-width: 872px) {
+            margin: 0 auto 20px;
+          }
         }
 
 
         .followHire {
           margin: 0;
           font-weight: 400;
+          text-align: center;
+          @media (max-width: 872px) {
+            margin: 0 auto 20px;
+          }
         }
 
         .followPhone {
           margin: 0 0 10px;
           font-weight: 400;
+          @media (max-width: 872px) {
+            margin: 0 auto 20px;
+          }
         }
 
         .followEmail {
           margin: 0 0 10px;
           font-weight: 400;
+          @media (max-width: 872px) {
+            margin: 0 auto 20px;
+          }
         }
 
         .items {
           width: 70%;
+
           display: flex;
           justify-content: space-around;
-          flex-wrap: wrap;
           align-items: center;
+          padding: 0 8px;
+          @media (max-width: 872px) {
+            margin: 0 auto;
+            padding: 0;
+            justify-content: space-between;
+          }
+          @media (max-width: 520px) {
+            width: 100%;
+            padding-right: 10px;
+
+          }
+          @media (max-width: 360px) {
+            justify-content: space-between;
+            padding-right: 20px;
+          }
         }
       }
 
@@ -67,6 +108,10 @@
         padding: 0 12px;
         box-sizing: border-box;
         width: 60%;
+        @media (max-width: 872px) {
+          width: 100%;
+          margin-left: 0;
+        }
 
 
         .formTitle {
@@ -89,6 +134,10 @@
             flex-direction: row;
             justify-content: space-around;
             width: 71.3%;
+            @media (max-width: 612px) {
+              flex-wrap: wrap;
+              width: 100%;
+            }
 
             .input {
               display: block;
@@ -96,6 +145,10 @@
               font-weight: 400;
               flex: 0 0 auto;
               width: 70%;
+              @media (max-width: 612px) {
+                margin-bottom: 10px;
+                width: 100%;
+              }
 
               &::placeholder, &[placeholder] {
                 font-size: 16px;
@@ -112,6 +165,8 @@
             resize: none;
             width: 100%;
             padding: 0.81rem 0.96rem;
+            @media (max-width: 612px) {
+            }
 
             &::placeholder, &[placeholder] {
               color: #656565;
