@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
 
     .aboutMeSummary {
       display: flex;
@@ -61,11 +61,15 @@
         .infoItem {
           padding: 12px 0;
           font-weight: 400;
+          display: flex;
+
           .infoText {
             font-weight: 600;
+            margin-right: 5px;
           }
           .infoEmail {
             color: #20c997;
+            margin-right: 5px;
           }
         }
       }

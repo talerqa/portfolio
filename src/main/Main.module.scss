@@ -21,7 +21,9 @@
   .greeting {
     font-size: 28px;
     margin: 0 0 16px;
-    @media (max-width: 602px) {
+    text-align: center;
+    @media (max-width: 353px) {
+      font-size: 24px;
       text-align: center;
     }
   }
@@ -32,13 +34,17 @@
     @media (max-width: 602px) {
       text-align: center;
     }
+    @media (max-width: 353px) {
+      font-size: 36px;
+
+    }
   }
 
   .skills {
     font-size: 28px;
     margin: 0 0 16px;
-    @media (max-width: 602px) {
-      text-align: center;
+    @media (max-width: 353px) {
+      font-size: 24px;
     }
   }
 
@@ -59,5 +65,9 @@
   @media (max-width: 490px) {
     width: 270px;
     height: 270px;
+  }
+  @media (max-width: 350px) {
+    width: 240px;
+    height: 240px;
   }
 }
