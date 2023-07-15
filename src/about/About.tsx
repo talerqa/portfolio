@@ -2,6 +2,7 @@ import React from 'react';
 import s from './About.module.scss';
 import stylesContainer from './../common/styles/Container.module.css'
 import {Title} from '../common/components/title/Title';
+import {Button} from '../common/components/Button/Button';
 
 const About = () => {
   return (
@@ -42,7 +43,11 @@ const About = () => {
                 Minsk, Belarus
               </li>
             </ul>
-            <a href="#" className={s.downloadCv}>Download CV</a>
+
+           <Button title={'Download CV'} href={"#"}/>
+            {/*<button className={s.button}>*/}
+            {/*  <a href="#" className={s.downloadCv}>Download CV</a>*/}
+            {/*</button>*/}
           </div>
         </div>
       </div>

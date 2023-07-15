@@ -34,6 +34,11 @@
         box-sizing: border-box;
         font-weight: 600;
         margin-right: 30px;
+
+        text-align: center;
+
+
+
         @media (max-width: 872px) {
           width: 80%;
           margin-right: 0;
@@ -77,12 +82,12 @@
         }
 
         .items {
-          width: 70%;
-
+          width: 320px;
           display: flex;
           justify-content: space-around;
           align-items: center;
           padding: 0 8px;
+          margin: 0 auto;
           @media (max-width: 872px) {
             margin: 0 auto;
             padding: 0;
@@ -175,7 +180,6 @@
               font-size: 16px;
               font-family: $fontFamily;
             }
-
           }
         }
       }
@@ -184,9 +188,12 @@
 
     .buttonSend {
       margin-top: 5px;
-      width: 100px;
       height: 30px;
       align-self: center;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-family: inherit;
     }
 
   }

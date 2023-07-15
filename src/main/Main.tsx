@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Main.module.scss'
 import styleContainer  from  './../common/styles/Container.module.css'
+import {Button} from '../common/components/Button/Button';
 
 export const Main = () => {
   return (
@@ -13,8 +14,12 @@ export const Main = () => {
           <p className={s.based}>based in Minsk, Belarus</p>
         </div>
         <div className={s.photo}>
-          <img className={s.image} src="" alt=""/>
+          <img className={s.image} alt=""/>
+
         </div>
+        <button className={s.button}>
+          <Button title={'View My Work'} href={"#"}/>
+        </button>
       </div>
     </div>
   );

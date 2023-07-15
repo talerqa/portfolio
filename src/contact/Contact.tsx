@@ -4,6 +4,7 @@ import s from './Contact.module.scss'
 import {Title} from '../common/components/title/Title';
 import {ItemLink} from '../footer/ItemLink';
 import {SocialLinksType} from '../app/state';
+import {Button} from '../common/components/Button/Button';
 
 type ContactPropsType = {
   state: Array<SocialLinksType>
@@ -42,7 +43,7 @@ export const Contact = (props: ContactPropsType) => {
             </textarea>
             </form>
             <button type={'submit'} className={s.buttonSend}>
-              <span>Send</span>
+              <Button title={'Send'} href={'#'}/>
             </button>
           </div>
         </div>

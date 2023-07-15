@@ -38,13 +38,18 @@
       @media (max-width: 872px) {
         margin-right: 0;
       }
+
       .aboutMeTitle {
         margin: 0 0 16px;
         font-size: 28px;
         text-align: center;
         color: $textColor;
         white-space: break-spaces;
+        @media (max-width: 460px) {
+          font-size: 24px;
+        }
       }
+
 
       .aboutMeName {
         color: #20c997;
@@ -54,7 +59,11 @@
         margin: 0 0 16px;
         font-weight: 400;
         text-align: justify;
+        @media (max-width: 872px) {
+          text-align: center;
+        }
       }
+
     }
 
     .aboutMeInfo {
@@ -76,11 +85,19 @@
             font-weight: 600;
             margin-right: 5px;
           }
+
           .infoEmail {
             color: #20c997;
             margin-right: 5px;
           }
         }
+      }
+
+      .button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-family: inherit;
       }
 
       .downloadCv {
