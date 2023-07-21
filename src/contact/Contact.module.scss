@@ -138,7 +138,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            width: 71.3%;
+            width: 100%;
+            gap: 20px;
             @media (max-width: 612px) {
               flex-wrap: wrap;
               width: 100%;
@@ -149,7 +150,8 @@
               font-size: 20px;
               font-weight: 400;
               flex: 0 0 auto;
-              width: 70%;
+
+              flex-grow: 1;
               @media (max-width: 612px) {
                 margin-bottom: 10px;
                 width: 100%;
