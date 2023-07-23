@@ -6,7 +6,8 @@
   min-height: 80vh;
   padding: 100px 0;
   background-color: $bgColorSecond;
-
+  display: flex;
+  align-items: center;
   @media (max-width: 1070px) {
     padding: 45px 0;
   }
