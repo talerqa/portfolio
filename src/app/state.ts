@@ -52,9 +52,9 @@ export const state: StateType = {
       description: 'A programming language introduced by Microsoft in 2012 and positioned as a web application development tool that extends the capabilities of JavaScript.'
     },
     {
-      title: 'Formik',
+      title: 'Formik / React Hook Form',
       svgName: 'formik',
-      description: 'A library that helps you work with forms. It simplifies getting data from a form, validating data, displaying error messages, and more.'
+      description: 'A libraries that helps you work with forms. It simplifies getting data from a form, validating data, displaying error messages, and more.'
     },
     {
       title: 'Axios',
@@ -124,7 +124,7 @@ export type SkillTitleType =
   | 'Postman'
   | 'Storybook'
   | 'Unit Testing'
-  | 'Formik'
+  | 'Formik / React Hook Form'
   | 'Node JS'
 
 
