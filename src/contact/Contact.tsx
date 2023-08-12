@@ -17,13 +17,10 @@ type FormData = {
   message: string
 };
 
-
 export const Contact = (props: ContactPropsType) => {
 
   const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
   const onSubmit = (data: any) => console.log(data);
-
-
   return (
     <div className={s.contactBlock}>
       <div className={styleContainer.container + ' ' + s.container}>
@@ -41,7 +38,7 @@ export const Contact = (props: ContactPropsType) => {
               {
                 props.state.map(itemLink => {
                   return <ItemLink svgName={itemLink.svgName}
-                                   link={itemLink.href}/>
+                                 link={itemLink.href}/>
                 })
               }
             </div>
