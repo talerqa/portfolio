@@ -21,6 +21,7 @@ export const Contact = (props: ContactPropsType) => {
 
   const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
   const onSubmit = (data: any) => console.log(data);
+
   return (
     <div className={s.contactBlock}>
       <div className={styleContainer.container + ' ' + s.container}>

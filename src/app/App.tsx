@@ -10,8 +10,6 @@ import About from '../about/About';
 import {state} from './state'
 
 function App() {
-
-
   return (
     <div className="App">
       <Header state={state.socialLinks} />
@@ -20,7 +18,7 @@ function App() {
       <Skills state={state.skills}/>
       <Projects/>
       <Contact state={state.socialLinks}/>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

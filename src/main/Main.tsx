@@ -15,7 +15,6 @@ export const Main = () => {
         </div>
         <div className={s.photo}>
           <img className={s.image} alt=""/>
-
         </div>
         <button className={s.button}>
           <Button title={'View My Work'} href={"#"}/>

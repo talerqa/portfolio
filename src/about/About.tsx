@@ -43,11 +43,7 @@ const About = () => {
                 Minsk, Belarus
               </li>
             </ul>
-
            <Button title={'Download CV'} href={"#"}/>
-            {/*<button className={s.button}>*/}
-            {/*  <a href="#" className={s.downloadCv}>Download CV</a>*/}
-            {/*</button>*/}
           </div>
         </div>
       </div>

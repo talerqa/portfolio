@@ -23,8 +23,6 @@ export const Skills = (props: SkillsPropsType) => {
                             description={skill.description}/>
             })
           }
-
-
         </div>
       </div>
     </div>

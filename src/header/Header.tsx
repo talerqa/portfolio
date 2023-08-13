@@ -9,18 +9,14 @@ type ContactPropsType = {
   state: Array<SocialLinksType>
 }
 
-
 export const Header = (props: ContactPropsType) => {
-
   return (
     <div className={s.headerBlock}>
       <div className={s.headerСontainer + ' ' + stylesContainer.container}>
         <SvgSelector
           svgName={'portfolioSvg'}/>
-
         <Nav/>
         <div className={s.headerLinks}>
-
           <a href={props.state[2].href} target="_blank" className={s.link}>
             <SvgSelector svgName={props.state[2].svgName}/>
           </a>
