@@ -1,8 +1,7 @@
 import React from 'react';
-import stylesContainer from './../common/styles/Container.module.css'
 import s from './Header.module.scss'
 import {Nav} from './nav/Nav';
-import {SvgSelector} from '../common/components/SvgSelector/SvgSelector';
+import {SvgSelector} from '../common/components/svgSelector/SvgSelector';
 import {SocialLinksType} from '../app/state';
 
 type ContactPropsType = {
@@ -12,7 +11,7 @@ type ContactPropsType = {
 export const Header = (props: ContactPropsType) => {
   return (
     <div className={s.headerBlock}>
-      <div className={s.headerСontainer + ' ' + stylesContainer.container}>
+      <div className={s.headerСontainer}>
         <SvgSelector
           svgName={'portfolioSvg'}/>
         <Nav/>

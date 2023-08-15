@@ -17,7 +17,7 @@ export const Projects = () => {
 
   return (
     <div className={s.projectBlock}>
-      <div className={s.projectContainer + ' ' + styleContainer.container}>
+      <div className={s.projectContainer}>
         <Title title={'My Work'}/>
         <div className={s.projects}>
           <Project

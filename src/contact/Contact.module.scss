@@ -1,4 +1,6 @@
 @import "./../common/styles/sass/variables";
+@import "./../common/styles/sass/mixins";
+
 
 .contactBlock {
   opacity: 1;
@@ -13,6 +15,7 @@
   }
 
   .container {
+    @include container();
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;

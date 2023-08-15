@@ -2,12 +2,12 @@ import React from 'react';
 import s from './About.module.scss';
 import stylesContainer from './../common/styles/Container.module.css'
 import {Title} from '../common/components/title/Title';
-import {Button} from '../common/components/Button/Button';
+import {Button} from '../common/components/button/Button';
 
 const About = () => {
   return (
     <div className={s.aboutBlock}>
-      <div className={stylesContainer.container + ' ' + s.container}>
+      <div className={s.container}>
         <Title title={'Know Me More'} />
         <div className={s.aboutMe}>
           <div className={s.aboutMeSummary}>

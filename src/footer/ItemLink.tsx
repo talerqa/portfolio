@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './ItemLink.module.scss';
-import {SocialSvgLinkType, SvgSelector} from '../common/components/SvgSelector/SvgSelector';
+import {SocialSvgLinkType, SvgSelector} from '../common/components/svgSelector/SvgSelector';
 
 type ItemLinkPropsType = {
   svgName: SocialSvgLinkType

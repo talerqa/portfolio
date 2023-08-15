@@ -5,7 +5,7 @@ import {Title} from '../common/components/title/Title';
 import {ItemLink} from '../footer/ItemLink';
 import {SocialLinksType} from '../app/state';
 import {useForm} from 'react-hook-form';
-import {Button} from '../common/components/Button/Button';
+import {Button} from '../common/components/button/Button';
 
 type ContactPropsType = {
   state: Array<SocialLinksType>
@@ -24,7 +24,7 @@ export const Contact = (props: ContactPropsType) => {
 
   return (
     <div className={s.contactBlock}>
-      <div className={styleContainer.container + ' ' + s.container}>
+      <div className={ s.container}>
         <Title title={'Get In Touch'}/>
         <div className={s.contactInfo}>
           <div className={s.contactFollow}>

@@ -1,4 +1,4 @@
-import {SocialSvgLinkType, SvgNameSkillsType} from '../common/components/SvgSelector/SvgSelector';
+import {SocialSvgLinkType, SvgNameSkillsType} from '../common/components/svgSelector/SvgSelector';
 
 export const state: StateType = {
   socialLinks: [

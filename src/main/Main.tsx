@@ -1,12 +1,11 @@
 import React from 'react';
 import s from './Main.module.scss'
-import styleContainer  from  './../common/styles/Container.module.css'
-import {Button} from '../common/components/Button/Button';
+import {Button} from '../common/components/button/Button';
 
 export const Main = () => {
   return (
     <div className={s.mainBlock}>
-      <div className={s.mainContainer + ' ' + styleContainer.container}>
+      <div className={s.mainContainer}>
         <div className={s.textBlock}>
           <p className={s.greeting}>Hi There</p>
           <h1 className={s.title}>I'am Aleksei Tarelko</h1>
