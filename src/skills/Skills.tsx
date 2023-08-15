@@ -3,6 +3,7 @@ import s from './Skills.module.scss'
 import {Skill} from './skill/Skill';
 import {Title} from '../common/components/title/Title';
 import {SkillsType} from '../app/state';
+import {Fade} from 'react-awesome-reveal';
 
 type SkillsPropsType = {
   state: Array<SkillsType>
@@ -10,21 +11,23 @@ type SkillsPropsType = {
 
 export const Skills = (props: SkillsPropsType) => {
   return (
-    <div className={s.skillsBlock}>
-      <div className={s.skillsContainer}>
-        <Title title={'Skills'}/>
-        <div className={s.skills}>
-          {
-            props.state.map(skill => {
-              return <Skill title={skill.title}
+    <Fade>
+      <div id="skills" className={s.skillsBlock}>
+        <div className={s.skillsContainer}>
+          <Title title={'Skills'}/>
+          <div className={s.skills}>
+            {
+              props.state.map(skill => {
+                return <Skill title={skill.title}
 
-                            svgName={skill.svgName}
-                            description={skill.description}/>
-            })
-          }
+                              svgName={skill.svgName}
+                              description={skill.description}/>
+              })
+            }
+          </div>
         </div>
       </div>
-    </div>
+    </Fade>
   );
 };
 

@@ -77,7 +77,7 @@ export const state: StateType = {
       description: 'A Style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML'
     },
     {
-      title: 'SASS/SCSS',
+      title: 'SASS / SCSS',
       svgName: 'sass/scss',
       description: 'A CSS-based metalanguage designed to increase the abstraction level of CSS code and simplify cascading style sheet files.'
     },
@@ -113,7 +113,7 @@ export const state: StateType = {
 export type SkillTitleType =
   | 'HTML'
   | 'CSS'
-  | 'SASS/SCSS'
+  | 'SASS / SCSS'
   | 'JavaScript'
   | 'TypeScript'
   | 'React'

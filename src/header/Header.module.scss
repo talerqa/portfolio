@@ -2,7 +2,8 @@
 
 .headerBlock {
   width: 100%;
-  height: 80px;
+  height: 63px;
+  //height: 80px;
   background-color: #f8f9fa;
   position: fixed;
   z-index: 10;
@@ -13,7 +14,8 @@
   .headerСontainer {
     display: flex;
     background-color: #f8f9fa;
-    padding-top: 10px;
+    padding-top: 2px;
+    //padding-top: 10px;
     justify-content: space-between;
     @include container();
     .headerLinks {

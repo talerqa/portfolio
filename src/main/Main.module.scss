@@ -60,6 +60,7 @@
 
   .skills {
     font-size: 28px;
+    display: block;
     margin: 0 0 16px;
     text-align: center;
     @media (max-width: 353px) {
@@ -75,6 +76,18 @@
       text-align: center;
     }
   }
+
+
+  .button {
+    margin: 40px auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+
+  }
+
 }
 
 .photo {
@@ -103,18 +116,6 @@
   }
 }
 
-  .button {
-    display: none;
-    margin-top: 40px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    @media (max-width: 1099px) {
-      display: block;
-      max-width: 580px;
-      margin-bottom: 20px;
-    }
-  }
+
 
 }

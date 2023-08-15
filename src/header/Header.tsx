@@ -8,7 +8,9 @@ type ContactPropsType = {
   state: Array<SocialLinksType>
 }
 
+
 export const Header = (props: ContactPropsType) => {
+
   return (
     <div className={s.headerBlock}>
       <div className={s.headerСontainer}>
