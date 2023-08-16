@@ -10,7 +10,6 @@ type PropsType = {
 }
 
 export const Projects = (props: PropsType) => {
-
   return (
     <Fade>
       <div id="projects" className={s.projectBlock}>

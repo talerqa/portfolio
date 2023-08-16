@@ -5,10 +5,10 @@
   background-color: $bgColorSecond;
   opacity: 1;
   width: 100%;
-  min-height: 100vh;
   padding: 100px 0;
   display: flex;
   align-items: center;
+  scroll-behavior: smooth;
   @media (max-width: 1070px) {
     padding: 45px 0;
   }

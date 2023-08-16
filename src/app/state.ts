@@ -112,12 +112,13 @@ export const state: StateType = {
     },
   ],
   navLinks: [
-    {navTitle: 'Home', navHref: 'main'},
-    {navTitle: 'About', navHref: 'about'},
-    {navTitle: 'Skills', navHref: 'skills'},
-    {navTitle: 'Projects', navHref: 'projects'},
-    {navTitle: 'Contact', navHref: 'contact'},
+    {navTitle: 'Home', navHref: 'main', offset: 0},
+    {navTitle: 'About', navHref: 'about', offset: 0},
+    {navTitle: 'Skills', navHref: 'skills', offset: 0},
+    {navTitle: 'Projects', navHref: 'projects', offset: 0},
+    {navTitle: 'Contact', navHref: 'contact', offset: 0},
   ],
+
   projects: [{
     title: 'Social network',
     description: 'An online platform that is used for communication, dating, creating social relationships between people with similar interests or offline connections, as well as for entertainment',
@@ -173,6 +174,7 @@ export type SocialLinksType = {
 export type NavLinksType = {
   navTitle: string
   navHref: string
+  offset: number
 }
 
 export type ProjectsType = {

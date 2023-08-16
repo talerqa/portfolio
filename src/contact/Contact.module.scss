@@ -1,15 +1,14 @@
 @import "./../common/styles/sass/variables";
 @import "./../common/styles/sass/mixins";
 
-
 .contactBlock {
-  //opacity: 1;
   width: 100%;
-  min-height: 100vh;
   padding: 100px 0;
   background-color: $bgColorSecond;
   display: flex;
   align-items: center;
+  min-height: 100vh;
+  scroll-behavior: smooth;
   @media (max-width: 1070px) {
     padding: 45px 0;
   }

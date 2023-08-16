@@ -14,11 +14,15 @@
     list-style: none;
     margin-left: 2px;
     margin-right: 2px;
-    @media (max-width: 785px)  {
+    @media (max-width: 785px) {
       display: none;
     }
-  }
+    .active {
+      color: #20c997;
+    }
 
+
+  }
 
   .link {
     color: $textColor;
@@ -34,7 +38,4 @@
 
   }
 
-  .active {
-    color: #20c997;
-  }
 }
