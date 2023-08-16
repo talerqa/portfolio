@@ -1,37 +1,20 @@
 import React from 'react';
 import s from './Nav.module.scss'
 import {Link} from 'react-scroll';
+import {NavLinksType} from './../../app/state';
 
-export const Nav = () => {
+type PropsType = {
+  navLinks: Array<NavLinksType>
+}
 
+export const Nav = (props: PropsType) => {
   return (
     <nav className={s.nav}>
-      <li className={s.item}>
-        <Link
-          activeClass={s.active} to="main" spy={true} smooth={true} offset={0} duration={500}
-          className={s.link}> Home</Link>
-      </li>
-      <li className={s.item}>
-        <Link
-          activeClass={s.active} to="about" spy={true} smooth={true} offset={0} duration={500}
-          className={s.link}>About</Link>
-      </li>
-      <li className={s.item}>
-        <Link
-          activeClass={s.active} to="skills" spy={true} smooth={true} offset={0} duration={500}
-          className={s.link}>Skills</Link>
-      </li>
-      <li className={s.item}>
-        <Link
-          activeClass={s.active} to="projects" spy={true} smooth={true} offset={0} duration={500}
-          className={s.link}>Projects</Link>
-      </li>
-      <li className={s.item}>
-        <Link
-          activeClass={s.active} to="contact" spy={true} smooth={true} offset={50} duration={500}
-          className={s.link}>Contact</Link>
-      </li>
-
+      {props.navLinks.map((link) => {
+        return <li className={s.item}><Link
+          activeClass={s.active} to={`${link.navHref}`} spy={true} smooth={true} offset={0} duration={500}
+          className={s.link}>{link.navTitle}</Link></li>
+      })}
     </nav>
   );
 };

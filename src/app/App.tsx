@@ -12,11 +12,11 @@ import {state} from './state'
 function App() {
   return (
     <div className="App">
-      <Header state={state.socialLinks} />
+      <Header socialLinks={state.socialLinks}  navLinks={state.navLinks}/>
       <Main/>
       <About/>
       <Skills state={state.skills}/>
-      <Projects/>
+      <Projects state={state.projects}/>
       <Contact state={state.socialLinks}/>
       <Footer/>
     </div>

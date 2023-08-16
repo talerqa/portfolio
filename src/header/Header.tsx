@@ -2,10 +2,11 @@ import React from 'react';
 import s from './Header.module.scss'
 import {Nav} from './nav/Nav';
 import {SvgSelector} from '../common/components/svgSelector/SvgSelector';
-import {SocialLinksType} from '../app/state';
+import {NavLinksType, SocialLinksType} from '../app/state';
 
 type ContactPropsType = {
-  state: Array<SocialLinksType>
+  socialLinks: Array<SocialLinksType>
+  navLinks: Array<NavLinksType>
 }
 
 
@@ -15,16 +16,16 @@ export const Header = (props: ContactPropsType) => {
     <div className={s.headerBlock}>
       <div className={s.headerСontainer}>
         <SvgSelector svgName={'portfolioSvg'}/>
-        <Nav/>
+        <Nav navLinks={props.navLinks}/>
         <div className={s.headerLinks}>
-          <a href={props.state[2].href} target="_blank" className={s.link}>
-            <SvgSelector svgName={props.state[2].svgName}/>
+          <a href={props.socialLinks[2].href} target="_blank" className={s.link}>
+            <SvgSelector svgName={props.socialLinks[2].svgName}/>
           </a>
-          <a href={props.state[0].href} target="_blank" className={s.link}>
-            <SvgSelector svgName={props.state[0].svgName}/>
+          <a href={props.socialLinks[0].href} target="_blank" className={s.link}>
+            <SvgSelector svgName={props.socialLinks[0].svgName}/>
           </a>
-          <a href={props.state[4].href} target="_blank" className={s.link}>
-            <SvgSelector svgName={props.state[4].svgName}/>
+          <a href={props.socialLinks[4].href} target="_blank" className={s.link}>
+            <SvgSelector svgName={props.socialLinks[4].svgName}/>
           </a>
         </div>
         <div className={s.burgerMenu}>

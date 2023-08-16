@@ -1,4 +1,6 @@
 import {SocialSvgLinkType, SvgNameSkillsType} from '../common/components/svgSelector/SvgSelector';
+import todoImg from './../assets/img/todolist.png'
+import socialImg from './../assets/img/socialNetwork.png'
 
 export const state: StateType = {
   socialLinks: [
@@ -108,8 +110,36 @@ export const state: StateType = {
       svgName: 'nodeJs',
       description: 'Node.js is an out-of-browser JavaScript runtime that allows you to write server-side code for web pages and web applications.'
     },
+  ],
+  navLinks: [
+    {navTitle: 'Home', navHref: 'main'},
+    {navTitle: 'About', navHref: 'about'},
+    {navTitle: 'Skills', navHref: 'skills'},
+    {navTitle: 'Projects', navHref: 'projects'},
+    {navTitle: 'Contact', navHref: 'contact'},
+  ],
+  projects: [{
+    title: 'Social network',
+    description: 'An online platform that is used for communication, dating, creating social relationships between people with similar interests or offline connections, as well as for entertainment',
+    href: 'https://talerqa.github.io/samurai-way-main/',
+    backgroundImage: {backgroundImage: `url(${socialImg})`}
+  },
+    {
+      title: 'TodoList',
+      description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list',
+      href: 'https://talerqa.github.io/todolist/',
+      backgroundImage: {backgroundImage: `url(${todoImg})`}
+    },
   ]
 }
+
+export type StateType = {
+  socialLinks: Array<SocialLinksType>
+  skills: Array<SkillsType>
+  navLinks: Array<NavLinksType>
+  projects: Array<ProjectsType>
+}
+
 export type SkillTitleType =
   | 'HTML'
   | 'CSS'
@@ -128,10 +158,6 @@ export type SkillTitleType =
   | 'Node JS'
 
 
-export type StateType = {
-  socialLinks: Array<SocialLinksType>
-  skills: Array<SkillsType>
-}
 export type SkillsType = {
   title: SkillTitleType
   svgName: SvgNameSkillsType
@@ -142,4 +168,16 @@ export type SocialLinksType = {
   title: SocialSvgLinkType
   href: string
   svgName: SocialSvgLinkType
+}
+
+export type NavLinksType = {
+  navTitle: string
+  navHref: string
+}
+
+export type ProjectsType = {
+  title: string
+  description: string
+  href: string
+  backgroundImage: { backgroundImage: string }
 }
