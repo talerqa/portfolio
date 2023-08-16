@@ -113,10 +113,10 @@ export const state: StateType = {
   ],
   navLinks: [
     {navTitle: 'Home', navHref: 'main', offset: 0},
-    {navTitle: 'About', navHref: 'about', offset: 0},
-    {navTitle: 'Skills', navHref: 'skills', offset: 0},
-    {navTitle: 'Projects', navHref: 'projects', offset: 0},
-    {navTitle: 'Contact', navHref: 'contact', offset: 0},
+    {navTitle: 'About', navHref: 'about', offset: 1},
+    {navTitle: 'Skills', navHref: 'skills', offset: 2},
+    {navTitle: 'Projects', navHref: 'projects', offset: 5},
+    {navTitle: 'Contact', navHref: 'contact', offset: 5},
   ],
 
   projects: [{
