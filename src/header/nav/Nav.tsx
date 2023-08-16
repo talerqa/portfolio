@@ -12,7 +12,7 @@ export const Nav = (props: PropsType) => {
     <nav className={s.nav}>
       {props.navLinks.map((link) => {
         return <li className={s.item}><Link
-          activeClass={s.active} to={`${link.navHref}`} spy={true} smooth={true} offset={0} duration={500}
+          activeClass={s.active} to={`${link.navHref}`} spy={true} smooth={true} offset={0} duration={600}
           className={s.link}>{link.navTitle}</Link></li>
       })}
     </nav>

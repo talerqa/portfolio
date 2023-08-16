@@ -10,17 +10,19 @@ type ProjectProps = {
 
 export const Project = (props: ProjectProps) => {
   return (
-    <div className={s.project}>
+
+    <a href={props.href} target="_blank" className={s.project}>
       <div className={s.image} style={props.style}>
-        <button className={s.button}>
-          <a href={props.href} target="_blank" className={s.link}>View</a>
-        </button>
+        <div className={s.button}>
+
+          {/*<a href={props.href} target="_blank" className={s.link} onFocus={()=>{}}>View</a>*/}
+        </div>
       </div>
       <div className={s.information}>
         <h4 className={s.title}>{props.title}</h4>
         <p className={s.description}>{props.description}</p>
       </div>
-    </div> 
+    </a>
   );
 };
 
