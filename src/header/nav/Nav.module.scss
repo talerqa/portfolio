@@ -5,7 +5,7 @@
   justify-content: space-between;
   min-width: 220px;
   flex-wrap: nowrap;
-
+  scroll-behavior: smooth;
   @media (max-width: 785px)  {
     min-width: 0;
   }
@@ -31,6 +31,7 @@
     font-weight: 500;
     line-height: 24px;
     cursor: pointer;
+
   }
 
   .active {

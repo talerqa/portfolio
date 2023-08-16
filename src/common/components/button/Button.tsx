@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Button.module.scss'
+import {Link} from 'react-scroll';
 
 type ButtonPropsType = {
   title: string
@@ -8,9 +9,9 @@ type ButtonPropsType = {
 
 export const Button = (props: ButtonPropsType) => {
   return (
-    <>
-      <a className={s.downloadCv}>{props.title}</a>
-    </>
+    <Link
+      activeClass={s.active} to={`${props.href}`} spy={true} smooth={true} offset={0} duration={500}
+      className={s.button}>{props.title}</Link>
   );
 };
 

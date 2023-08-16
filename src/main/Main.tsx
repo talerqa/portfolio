@@ -19,7 +19,7 @@ export const Main = () => {
             />
             <p className={s.based}>based in Minsk, Belarus</p>
             <button className={s.button}>
-              <Button title={'View My Work'} href={'#'}/>
+              <Button title={'View My Work'} href={'projects'}/>
             </button>
           </div>
           <div className={s.photo}>

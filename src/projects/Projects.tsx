@@ -6,7 +6,6 @@ import todoImg from './../assets/img/todolist.png'
 import socialImg from './../assets/img/socialNetwork.png'
 import {Fade} from 'react-awesome-reveal';
 
-
 export const Projects = () => {
   const todoListDiv = {
     backgroundImage: `url(${todoImg})`,
@@ -17,7 +16,7 @@ export const Projects = () => {
 
   return (
     <Fade>
-      <div id='projects' className={s.projectBlock}>
+      <div id="projects" className={s.projectBlock}>
         <div className={s.projectContainer}>
           <Title title={'My Work'}/>
           <div className={s.projects}>

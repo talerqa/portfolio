@@ -14,8 +14,7 @@ export const Header = (props: ContactPropsType) => {
   return (
     <div className={s.headerBlock}>
       <div className={s.headerСontainer}>
-        <SvgSelector
-          svgName={'portfolioSvg'}/>
+        <SvgSelector svgName={'portfolioSvg'}/>
         <Nav/>
         <div className={s.headerLinks}>
           <a href={props.state[2].href} target="_blank" className={s.link}>

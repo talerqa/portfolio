@@ -1,4 +1,6 @@
 import React from 'react';
+import s from './SvgSelector.module.scss'
+import {Link} from 'react-scroll';
 
 export type SocialSvgLinkType = 'linkedin' | 'gitHub' | 'codeWars' | 'telegram' | 'gmail'
 export type SvgNameSkillsType = | 'html'
@@ -26,8 +28,10 @@ export const SvgSelector = (props: CommonSvgSelectorType) => {
 
   switch (props.svgName) {
     case 'portfolioSvg': {
-      return <>
-        <svg width="60px" height="60px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none"
+      return <Link activeClass="active" to="main" spy={true} smooth={true} offset={0} duration={500}
+                   className={s.link}>
+        <svg className={s.svg} width="60px" height="60px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+             fill="none"
              stroke="#000000">
           <path
             d="m26.5 36-13.1-.81a4 4 0 0 1-3.76-3.58L8.47 20.42a4 4 0 0 1 4-4.42h39.09a4 4 0 0 1 4 4.42l-1.2 11.19a4 4 0 0 1-3.76 3.58L37.5 36"/>
@@ -35,7 +39,7 @@ export const SvgSelector = (props: CommonSvgSelectorType) => {
           <path d="M27 16v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/>
           <rect x="26.5" y="33.25" width="11" height="5.5" rx="2.75"/>
         </svg>
-      </>
+      </Link>
     }
 
     case 'telegram': {

@@ -1,15 +1,28 @@
-  .downloadCv {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    border-width: 2px;
-    font-weight: 500;
-    border-radius: 25px;
-    color: white;
-    font-size: 16px;
-    background-color: #1baa80;
-    border-color: #1baa80;
-    padding: 12.80px 41.6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-width: 2px;
+  font-weight: 500;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  background-color: #1baa80;
+  border-color: #1baa80;
+  padding: 12.80px 41.6px;
+  cursor: pointer;
+  &:hover {
+    background-color: #23856a;
+    box-shadow: 0 0 5px 1px rgba(33, 37, 41, 1);
+    transition: all .2s ease;
+    color: rgba(255, 255, 255, 0.62);
   }
+
+  &:active {
+    box-shadow: none;
+    transition: all .2s ease;
+    background-color: #1baa80;
+    color: rgba(255, 255, 255, 1);
+  }
+}
 

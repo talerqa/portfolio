@@ -24,7 +24,7 @@ export const Contact = (props: ContactPropsType) => {
 
   return (
     <Fade>
-      <div id='contact' className={s.contactBlock}>
+      <div id="contact" className={s.contactBlock}>
         <div className={s.container}>
           <Title title={'Get In Touch'}/>
           <div className={s.contactInfo}>
