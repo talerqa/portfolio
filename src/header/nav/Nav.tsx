@@ -12,8 +12,8 @@ export const Nav = (props: PropsType) => {
     <nav className={s.nav}>
       {props.navLinks.map((link) => {
         return <li className={s.item}><Link
-          activeClass={s.active}
           to={`${link.navHref}`}
+          activeClass={s.active}
           spy={true}
           smooth={true}
           offset={link.offset}

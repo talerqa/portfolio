@@ -199,8 +199,26 @@
       border: none;
       outline: none;
       font-family: inherit;
+      &:disabled {
+        z-index: 10;
+
+      }
     }
 
+    .sendingMail {
+      font-family: $fontFamily;
+      margin-top: 50px;
+      height: 30px;
+      border-radius: 30px;
+      background-color: #1baa80;
+      text-decoration: none;
+      transition: all .2s ease;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+
+    }
   }
 }
 

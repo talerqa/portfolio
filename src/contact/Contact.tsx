@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Contact.module.scss'
 import {Title} from '../common/components/title/Title';
 import {ItemLink} from '../footer/ItemLink';
@@ -6,6 +6,8 @@ import {SocialLinksType} from '../app/state';
 import {useForm} from 'react-hook-form';
 import {Button} from '../common/components/button/Button';
 import {Fade} from 'react-awesome-reveal';
+import emailjs from '@emailjs/browser';
+
 
 type ContactPropsType = {
   state: Array<SocialLinksType>
@@ -18,28 +20,51 @@ type FormData = {
 };
 
 export const Contact = (props: ContactPropsType) => {
+  const [loading, setLoading] = useState(false);
+  const [sending, setSending] = useState('');
+
 
   const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = async (data: FormData) => {
+    emailjs.init('Zau9eVPlrX4LfuA0X')
+    const serviceId = 'service_r86uw7m';
+    const templateId = 'template_67a8rxf';
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      })
+      setSending('sended')
+      new Promise(resolve => setTimeout((resolve)=>{
+        setSending('succeeded')
+      }, 1700));
+    } catch (e: any) {
+      throw new Error(e)
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
-      <Fade>
-        <div id="contact" className={s.contactBlock}>
-          <div className={s.container}>
-            <Title title={'Get In Touch'}/>
-            <div className={s.contactInfo}>
-              <div className={s.contactFollow}>
-                <p className={s.followHire}>
-                  Hire me, I will be glad to work with you if my skills and experience suit you. Share as much info, as
-                  possible so we can get the most out of our first catch-up.Willing to talk over the phone or in person.
-                </p>
-                <h3 className={s.followTitle}>Follow me:</h3>
-                <p className={s.followPhone}>+375-29-754-00-87</p>
-                <p className={s.followEmail}>talerqa@gmail.com</p>
-                <div className={s.items}>
-                  {
-                    props.state.map(itemLink => {
-                      return <ItemLink svgName={itemLink.svgName}
+    <Fade>
+      <div id="contact" className={s.contactBlock}>
+        <div className={s.container}>
+          <Title title={'Get In Touch'}/>
+          <div className={s.contactInfo}>
+            <div className={s.contactFollow}>
+              <p className={s.followHire}>
+                Hire me, I will be glad to work with you if my skills and experience suit you. Share as much info, as
+                possible so we can get the most out of our first catch-up.Willing to talk over the phone or in person.
+              </p>
+              <h3 className={s.followTitle}>Follow me:</h3>
+              <p className={s.followPhone}>+375-29-754-00-87</p>
+              <p className={s.followEmail}>talerqa@gmail.com</p>
+              <div className={s.items}>
+                {
+                  props.state.map(itemLink => {
+                    return <ItemLink svgName={itemLink.svgName}
                                        link={itemLink.href}/>
                     })
                   }
@@ -71,12 +96,13 @@ export const Contact = (props: ContactPropsType) => {
                             {...register('message', {required: true})}>
               </textarea>
                   {errors.message?.type === 'required' && <p role="alert">Please, enter your message</p>}
-                  <button type="submit" className={s.buttonSend}>
-                    <Button title={'Send'}/>
-                  </button>
+                  <Button title={'Send'} type={'submit'}></Button>
                 </form>
+                {sending === 'sended' && <div style={{background: 'red'}}>Отправлено</div>}
+                <div className={s.sendingMail}>Your message has been sent</div>
+                {sending === 'succeeded' && <></>}
               </div>
-            </div>
+          </div>
           </div>
         </div>
       </Fade>

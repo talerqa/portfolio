@@ -3,6 +3,7 @@ import s from './Main.module.scss'
 import {Button} from '../common/components/button/Button';
 import {Fade} from 'react-awesome-reveal';
 import {TypeAnimation} from 'react-type-animation';
+import {Link} from 'react-scroll';
 
 export const Main = () => {
   return (
@@ -20,7 +21,9 @@ export const Main = () => {
               />
               <p className={s.based}>based in Minsk, Belarus</p>
               <button className={s.button}>
-                <Button title={'View My Work'} href={'projects'}/>
+                <Link
+                  activeClass={s.active} to='projects' spy={true} smooth={true} offset={0} duration={500}
+                  className={s.buttonLink}>View My Work</Link>
               </button>
             </div>
             <div className={s.photo}>
