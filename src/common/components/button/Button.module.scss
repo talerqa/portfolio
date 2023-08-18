@@ -1,48 +1,51 @@
-.buttonLink {
+.button {
   display: block;
+  margin-top: 5px;
   text-align: center;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: white;
   text-decoration: none;
-  border-width: 2px;
+  cursor: pointer;
   font-weight: 500;
   border-radius: 30px;
-  color: white;
   font-size: 16px;
   background-color: #1baa80;
-  border-color: #1baa80;
-  padding: 12.80px 41.6px;
-  cursor: pointer;
   transition: all .2s ease;
+
   &:hover {
     background-color: #23856a;
-    box-shadow: 0 0 5px 1px rgba(33, 37, 41, 1);
-    transition: all .2s ease;
+    box-shadow: 0 0 2px 1px rgba(33, 37, 41, 1);
+    transition: all .5s ease;
     color: rgba(255, 255, 255, 0.62);
   }
 
   &:active {
     box-shadow: none;
-    transition: all .2s ease;
+    transition: all .5s ease;
     background-color: #1baa80;
     color: rgba(255, 255, 255, 1);
-
+    border-radius: 30px;
   }
+
   &:disabled {
-    background-color: #2e2f2f;
+    background-color: rgb(53, 75, 64);
+    color: rgb(255, 255, 255);
+
+    &:hover {
+      box-shadow: none
+    }
+  }
+
+  .buttonLink {
+    display: block;
+    margin: 0;
+    border-radius: 30px;
+    padding: 12.80px 41.6px;
+    color: inherit;
+    border-width: 2px;
   }
 }
 
 
-.buttonSend {
-  margin-top: 5px;
-  height: 30px;
-  align-self: center;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-family: inherit;
-
-  &:disabled {
-    z-index: 10;
-    background-color: rebeccapurple;
-  }
-}

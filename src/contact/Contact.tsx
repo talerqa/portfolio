@@ -21,14 +21,14 @@ type FormData = {
 
 export const Contact = (props: ContactPropsType) => {
   const [loading, setLoading] = useState(false);
-  const [sending, setSending] = useState('');
+  const [sending, setSending] = useState<'sending' | 'send' | 'has-been-sent'>('sending');
 
-
-  const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
+  const {register, handleSubmit, formState: {errors}, setValue} = useForm<FormData>();
   const onSubmit = async (data: FormData) => {
     emailjs.init('Zau9eVPlrX4LfuA0X')
     const serviceId = 'service_r86uw7m';
     const templateId = 'template_67a8rxf';
+    setSending('sending')
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {
@@ -36,9 +36,10 @@ export const Contact = (props: ContactPropsType) => {
         email: data.email,
         message: data.message,
       })
-      setSending('sended')
-      new Promise(resolve => setTimeout((resolve)=>{
-        setSending('succeeded')
+
+      setSending('send')
+      new Promise(resolve => setTimeout((resolve) => {
+        setSending('has-been-sent')
       }, 1700));
     } catch (e: any) {
       throw new Error(e)
@@ -77,7 +78,11 @@ export const Contact = (props: ContactPropsType) => {
                     <input className={s.input}
                            type="text"
                            placeholder={'Name'}
-                           {...register('name', {required: true, minLength: 2, maxLength: 20})}
+                           {...register('name', {
+                             required: true,
+                             minLength: 2,
+                             maxLength: 40,
+                           },)}
                     />
                     <input className={s.input}
                            type="text"
@@ -87,20 +92,26 @@ export const Contact = (props: ContactPropsType) => {
                              pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
                            })}/>
                   </div>
-                  {errors.name?.type === 'required' || errors.name?.type === 'maxLength' || errors.name?.type === 'minLength' &&
-                    <p role="alert">Name is required</p>}
-                  {errors.email?.type === 'required' || errors.email?.type === 'pattern' &&
-                    <p role="alert">Email is required</p>}
-                  <textarea className={s.textarea} required
+                  <div className={s.error}>
+                    {errors.name?.type === 'required' || errors.name?.type === 'maxLength' || errors.name?.type === 'minLength' || errors.name?.type === 'pattern' ?
+                      <p role="alert">Name is required</p> : null}
+
+                    {errors.email?.type === 'required' || errors.email?.type === 'pattern' ?
+                      <p role="alert">Email is required</p> : null}
+                  </div>
+                  <textarea className={s.textarea}
                             placeholder={'Tell us more about your needs........'}
-                            {...register('message', {required: true})}>
-              </textarea>
-                  {errors.message?.type === 'required' && <p role="alert">Please, enter your message</p>}
-                  <Button title={'Send'} type={'submit'}></Button>
+                            {...register('message', {required: true, minLength: 10})}>
+                  </textarea>
+
+                  <Button title={'Send'} type={'submit'} disabled={loading}></Button>
+
                 </form>
-                {sending === 'sended' && <div style={{background: 'red'}}>Отправлено</div>}
-                <div className={s.sendingMail}>Your message has been sent</div>
-                {sending === 'succeeded' && <></>}
+                {sending === 'send' && <div className={s.sendingMail}>Your message has been sent</div>}
+                {sending === 'has-been-sent' && <></>}
+                {errors.message?.type === 'required' || errors.message?.type === 'minLength' &&
+                  <p role="alert" style={{margin: '0 auto',}}>Please, enter your message at least 10 characters
+                    long</p>}
               </div>
           </div>
           </div>
