@@ -8,7 +8,6 @@ import {Button} from '../common/components/button/Button';
 import {Fade} from 'react-awesome-reveal';
 import emailjs from '@emailjs/browser';
 
-
 type ContactPropsType = {
   state: Array<SocialLinksType>
 }
