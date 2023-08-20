@@ -103,9 +103,7 @@ export const Contact = (props: ContactPropsType) => {
                             placeholder={'Tell us more about your needs........'}
                             {...register('message', {required: true, minLength: 10})}>
                   </textarea>
-
                   <Button title={'Send'} type={'submit'} disabled={loading}></Button>
-
                 </form>
                 {sending === 'send' && <div className={s.sendingMail}>Your message has been sent</div>}
                 {sending === 'has-been-sent' && <></>}
