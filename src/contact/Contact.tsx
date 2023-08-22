@@ -107,7 +107,7 @@ export const Contact = (props: ContactPropsType) => {
                 {sending === 'send' && <div className={s.sendingMail}>Your message has been sent</div>}
                 {sending === 'has-been-sent' && <></>}
                 {errors.message?.type === 'required' || errors.message?.type === 'minLength' &&
-                  <p role="alert" style={{margin: '0 auto',}}>Please, enter your message at least 10 characters
+                  <p role="alert" style={{margin: '0 auto', paddingTop: '20px'}}>Please, enter your message at least 10 characters
                     long</p>}
               </div>
           </div>

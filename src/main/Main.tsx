@@ -22,7 +22,7 @@ export const Main = () => {
               <p className={s.based}>based in Minsk, Belarus</p>
               <button className={s.button}>
                 <Link
-                  activeClass={s.active} to='projects' spy={true} smooth={true} offset={0} duration={500}
+                  activeClass={s.active} to='projects' spy={true} smooth={true} offset={5} duration={500}
                   className={s.buttonLink}>View My Work</Link>
               </button>
             </div>

@@ -134,7 +134,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
-          height: 200px;
+          min-height: 200px;
           width: 100%;
           margin: 0 auto;
 
@@ -176,8 +176,12 @@
             resize: none;
             outline: none;
             width: 100%;
+
             padding: 0.81rem 0.96rem;
             @media (max-width: 612px) {
+              min-height: 100px;
+              padding: 20px;
+
             }
 
             &::placeholder, &[placeholder] {
