@@ -6,21 +6,29 @@
   min-width: 220px;
   flex-wrap: nowrap;
   scroll-behavior: smooth;
-  @media (max-width: 785px)  {
-    min-width: 0;
+  transition: all .2s ease;
+
+  @media screen and (max-width: 785px) {
+    display: none;
   }
 
   .item {
     list-style: none;
     margin-left: 2px;
     margin-right: 2px;
+    transition: all .2s ease;
     @media (max-width: 785px) {
-      display: none;
+      margin: 0 auto;
+      height: 40px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      transition: all .2s ease;
+
     }
+
     .active {
       color: #20c997;
     }
-
 
   }
 
@@ -35,7 +43,15 @@
     font-weight: 500;
     line-height: 24px;
     cursor: pointer;
+    @media (max-width: 785px) {
+      height: 40px;
 
+    }
+
+    &:hover {
+      color: #1baa80;
+      transition: all .2s ease;
+    }
   }
-
 }
+

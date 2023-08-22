@@ -8,20 +8,19 @@ type PropsType = {
 }
 
 export const Nav = (props: PropsType) => {
-  return (
-    <nav className={s.nav}>
-      {props.navLinks.map((link) => {
-        return <li className={s.item}><Link
-
-          to={`${link.navHref}`}
-          activeClass={s.active}
-          spy={true}
-          smooth={true}
-          offset={link.offset}
-          duration={500}
-          className={s.link}>{link.navTitle}</Link></li>
-      })}
-    </nav>
-  );
+  return (<nav className={s.nav}>
+    {props.navLinks.map((link) => {
+      return <li className={s.item}><Link
+        to={`${link.navHref}`}
+        activeClass={s.active}
+        spy={true}
+        smooth={true}
+        offset={link.offset}
+        duration={500}
+        className={s.link}
+      >
+        {link.navTitle}</Link></li>
+    })}
+  </nav>);
 };
 

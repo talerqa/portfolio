@@ -38,7 +38,7 @@ export const state: StateType = {
       description: 'An open source JavaScript library for developing user interfaces. Can be used to develop single page and mobile applications.'
     },
     {
-      title: 'Redux / Redux Toolkit',
+      title: 'Redux / Redux Toolkit / RTK Query',
       svgName: 'redux',
       description: 'An open source JavaScript library for managing application state.'
     },
@@ -148,7 +148,7 @@ export type SkillTitleType =
   | 'JavaScript'
   | 'TypeScript'
   | 'React'
-  | 'Redux / Redux Toolkit'
+  | 'Redux / Redux Toolkit / RTK Query'
   | 'Axios'
   | 'Git'
   | 'Material-ui'

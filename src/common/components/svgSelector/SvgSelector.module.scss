@@ -1,5 +1,59 @@
 .svg {
   cursor: pointer;
+  transition: all .4s ease;
+
+  &:hover {
+    fill: rgba(222, 226, 232, 0.5);
+    transition: all .4s ease;
+  }
 }
 
+.svgTelegram {
+  cursor: pointer;
+  transition: all .4s ease;
 
+  &:hover {
+    fill: #229ED9;
+    transition: all .4s ease;
+  }
+}
+
+.svgGmail {
+  cursor: pointer;
+  transition: all .4s ease;
+  &:hover {
+    fill: rgba(248, 96, 64, 0.58);
+    transition: all .4s ease;
+  }
+}
+
+.svgCodewars {
+  cursor: pointer;
+  transition: all .4s ease;
+
+  &:hover {
+    fill: #b1361e;
+    transition: all .4s ease;
+  }
+}
+
+.svgLinkedin {
+  cursor: pointer;
+  transition: all .4s ease;
+
+  &:hover {
+    fill: rgba(10, 102, 194, 0.89);
+    transition: all .4s ease;
+
+  }
+}
+
+.svgGithub {
+  cursor: pointer;
+  transition: all .4s ease;
+
+  &:hover {
+    fill: rgba(168, 168, 168, 0.95);
+    transition: all .4s ease;
+  }
+}

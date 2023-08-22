@@ -47,6 +47,7 @@ export const Contact = (props: ContactPropsType) => {
     }
   }
 
+  console.log(register('message').pattern)
   return (
     <Fade>
       <div id="contact" className={s.contactBlock}>
@@ -58,7 +59,7 @@ export const Contact = (props: ContactPropsType) => {
                 Hire me, I will be glad to work with you if my skills and experience suit you. Share as much info, as
                 possible so we can get the most out of our first catch-up.Willing to talk over the phone or in person.
               </p>
-              <h3 className={s.followTitle}>Follow me:</h3>
+              <h3 className={s.followTitle}>FOLLOW ME:</h3>
               <p className={s.followPhone}>+375-29-754-00-87</p>
               <p className={s.followEmail}>talerqa@gmail.com</p>
               <div className={s.items}>
@@ -93,10 +94,10 @@ export const Contact = (props: ContactPropsType) => {
                   </div>
                   <div className={s.error}>
                     {errors.name?.type === 'required' || errors.name?.type === 'maxLength' || errors.name?.type === 'minLength' || errors.name?.type === 'pattern' ?
-                      <p role="alert">Name is required</p> : null}
+                      <span role="alert">Name is required</span> : null}
 
                     {errors.email?.type === 'required' || errors.email?.type === 'pattern' ?
-                      <p role="alert">Email is required</p> : null}
+                      <span role="alert">Email is required</span> : null}
                   </div>
                   <textarea className={s.textarea}
                             placeholder={'Tell us more about your needs........'}
@@ -106,9 +107,9 @@ export const Contact = (props: ContactPropsType) => {
                 </form>
                 {sending === 'send' && <div className={s.sendingMail}>Your message has been sent</div>}
                 {sending === 'has-been-sent' && <></>}
-                {errors.message?.type === 'required' || errors.message?.type === 'minLength' &&
-                  <p role="alert" style={{margin: '0 auto', paddingTop: '20px'}}>Please, enter your message at least 10 characters
-                    long</p>}
+                {errors.message?.type === 'required' || errors.message?.type === 'minLength'  ?
+                  <p role="alert" style={{margin: '0 auto', paddingTop: '20px', color: '#b1361e'}}>Please, enter your message at least 10 characters
+                    long</p> : null}
               </div>
           </div>
           </div>

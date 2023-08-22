@@ -1,7 +1,6 @@
 @import "./../common/styles/sass/mixins";
 
 .headerBlock {
-
   width: 100%;
   height: 60px;
   background-color: #f8f9fa;
@@ -14,9 +13,12 @@
     display: flex;
     background-color: #f8f9fa;
     justify-content: space-between;
+
     @include container();
+
     .headerLinks {
       display: flex;
+
       .link {
         display: flex;
         align-items: center;
@@ -24,13 +26,21 @@
         padding: 0 8px;
         text-decoration: none;;
         cursor: pointer;
+
+        &:hover {
+          fill: #656565;
+          color: #656565;
+        }
+
         @media (max-width: 610px) {
           svg {
             height: 30px;
             width: 30px;
             transition-duration: 0.3s;
             cursor: pointer;
+
           }
+
         }
         @media (max-width: 350px) {
           display: none;
@@ -40,10 +50,12 @@
 
     .burgerMenu {
       display: none;
+      background-color: transparent;
+      outline: none;
+      border: none;
       @media (max-width: 785px) {
         display: flex;
         align-items: center;
-
       }
     }
 
