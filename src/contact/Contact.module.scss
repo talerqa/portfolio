@@ -117,11 +117,12 @@
         padding: 0 12px;
         box-sizing: border-box;
         width: 60%;
+
+
         @media (max-width: 872px) {
           width: 100%;
           margin-left: 0;
         }
-
 
         .formTitle {
           margin: 0;
@@ -201,7 +202,18 @@
             width: 100%;
             justify-content: space-evenly;
             color: #b1361e;
+            .errorName {
+              margin-right: 10px;
+            }
+
           }
+        }
+
+        .errorMessage {
+          margin: 0 auto;
+          padding-top: 20px;
+          color: #b1361e;
+          text-align: center;
         }
       }
     }
@@ -241,7 +253,6 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 0;
   -webkit-text-fill-color: #1f1f20;
-
   transition: background-color 5000s ease-in-out 0s;
   background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
 }

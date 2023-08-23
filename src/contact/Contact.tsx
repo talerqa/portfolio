@@ -94,10 +94,10 @@ export const Contact = (props: ContactPropsType) => {
                   </div>
                   <div className={s.error}>
                     {errors.name?.type === 'required' || errors.name?.type === 'maxLength' || errors.name?.type === 'minLength' || errors.name?.type === 'pattern' ?
-                      <span role="alert">Name is required</span> : null}
+                      <span role="alert"  className={s.errorName}>Name is required</span> : null}
 
                     {errors.email?.type === 'required' || errors.email?.type === 'pattern' ?
-                      <span role="alert">Email is required</span> : null}
+                      <span role="alert"  className={s.errorEmail}>Email is required</span> : null}
                   </div>
                   <textarea className={s.textarea}
                             placeholder={'Tell us more about your needs........'}
@@ -107,9 +107,10 @@ export const Contact = (props: ContactPropsType) => {
                 </form>
                 {sending === 'send' && <div className={s.sendingMail}>Your message has been sent</div>}
                 {sending === 'has-been-sent' && <></>}
-                {errors.message?.type === 'required' || errors.message?.type === 'minLength'  ?
-                  <p role="alert" style={{margin: '0 auto', paddingTop: '20px', color: '#b1361e'}}>Please, enter your message at least 10 characters
-                    long</p> : null}
+                {errors.message?.type === 'required' || errors.message?.type === 'minLength' ?
+                  <p role="alert" className={s.errorMessage}>
+                    Please, enter your message at least 10 characters
+                    long</p> : <></>}
               </div>
           </div>
           </div>
