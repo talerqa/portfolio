@@ -3,10 +3,10 @@ import s from './Main.module.scss'
 import {Fade} from 'react-awesome-reveal';
 import {TypeAnimation} from 'react-type-animation';
 import {Link} from 'react-scroll';
+import avatar from 'assets/img/avatart.jpg'
 
 export const Main = () => {
   return (
-
       <Fade>
         <div id="main" className={s.mainBlock}>
           <div className={s.mainContainer}>
@@ -26,9 +26,8 @@ export const Main = () => {
               </button>
             </div>
             <div className={s.photo}>
-              <img className={s.image} alt=""/>
+              <img src={avatar} className={s.image} alt="avatar"/>
             </div>
-
           </div>
         </div>
       </Fade>

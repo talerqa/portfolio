@@ -10,8 +10,10 @@ type PropsType = {
 }
 
 export const BurgerNav = (props: PropsType) => {
+
   return (<nav className={props.openBurgerMenu ? s.nav + ' ' + s.show : s.nav}>
     {props.navLinks.map((link) => {
+
       return <li className={s.item}><Link
         to={`${link.navHref}`}
         activeClass={s.active}
