@@ -30,7 +30,7 @@ export const SvgSelector = (props: CommonSvgSelectorType) => {
     case 'portfolioSvg': {
       return <Link activeClass="active" to="main" spy={true} smooth={true} offset={0} duration={500}
                    className={s.link}>
-        <svg className={s.svg} width="60px" height="60px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+        <svg className={s.svg} width="50px" height="50px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
              fill="transparent"
              stroke="#000000">
           <path

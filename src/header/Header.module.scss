@@ -53,11 +53,19 @@
       background-color: transparent;
       outline: none;
       border: none;
+
       @media (max-width: 785px) {
         display: flex;
         align-items: center;
       }
-    }
 
+      .svgItem {
+        transition: all 0.8s ease;
+      }
+
+      .active {
+        transition: all 0.8s ease;
+      }
+    }
   }
 

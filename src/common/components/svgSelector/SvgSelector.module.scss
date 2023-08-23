@@ -6,6 +6,10 @@
     fill: rgba(222, 226, 232, 0.5);
     transition: all .4s ease;
   }
+
+  &:focus {
+    fill: transparent;
+  }
 }
 
 .svgTelegram {
@@ -16,14 +20,23 @@
     fill: #229ED9;
     transition: all .4s ease;
   }
+
+  &:focus {
+    fill: #000000;
+  }
 }
 
 .svgGmail {
   cursor: pointer;
   transition: all .4s ease;
+
   &:hover {
     fill: rgba(248, 96, 64, 0.58);
     transition: all .4s ease;
+  }
+
+  &:focus {
+    fill: transparent;
   }
 }
 
@@ -35,6 +48,10 @@
     fill: #b1361e;
     transition: all .4s ease;
   }
+
+  &:focus {
+    fill: #000000;
+  }
 }
 
 .svgLinkedin {
@@ -44,7 +61,10 @@
   &:hover {
     fill: rgba(10, 102, 194, 0.89);
     transition: all .4s ease;
+  }
 
+  &:focus {
+    fill: transparent;
   }
 }
 
@@ -55,5 +75,9 @@
   &:hover {
     fill: rgba(168, 168, 168, 0.95);
     transition: all .4s ease;
+  }
+
+  &:focus {
+    fill: #000000;
   }
 }

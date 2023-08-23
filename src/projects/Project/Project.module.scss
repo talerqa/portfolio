@@ -13,12 +13,12 @@
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
   font-size: 16px;
   text-decoration: none;
-  transition: all .6s ease;
+  transition: all .3s ease;
   border-radius: 5.5px;
-  &:hover {
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.6);
-    transition: all .6s ease;
 
+  &:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.8);
+    transition: all .3s ease;
   }
 
   .image {
