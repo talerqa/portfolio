@@ -6,8 +6,11 @@
   background-color: #f8f9fa;
   position: fixed;
   z-index: 10;
-  box-shadow: 0 3px 4px rgba(0,0,0,.2);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+
+
 }
+
 
   .headerСontainer {
     display: flex;
@@ -15,6 +18,10 @@
     justify-content: space-between;
 
     @include container();
+
+    @media (max-width: 320px) {
+      max-width: 100%;
+    }
 
     .headerLinks {
       display: flex;

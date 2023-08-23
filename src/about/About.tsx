@@ -4,9 +4,11 @@ import {Title} from 'common/components/title/Title';
 import {Button} from 'common/components/button/Button';
 import {Fade} from 'react-awesome-reveal';
 
+
 export const About = () => {
   return (
-      <Fade>
+
+    <Fade>
         <div id="about" className={s.aboutBlock}>
           <div  className={s.container}>
             <Title title={'Know Me More'}/>
@@ -51,6 +53,7 @@ export const About = () => {
           </div>
         </div>
       </Fade>
-  )
-};
 
+  )
+    ;
+};

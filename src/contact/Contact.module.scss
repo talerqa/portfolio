@@ -56,7 +56,6 @@
           }
         }
 
-
         .followHire {
           margin: 0;
           font-weight: 400;
@@ -71,6 +70,7 @@
           font-weight: 400;
           @media (max-width: 872px) {
             margin: 0 auto 20px;
+            font-size: 15px;
           }
         }
 
@@ -79,12 +79,14 @@
           font-weight: 400;
           @media (max-width: 872px) {
             margin: 0 auto 20px;
+            font-size: 15px;
           }
         }
 
         .items {
           width: 320px;
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-around;
           align-items: center;
           padding: 0 8px;
@@ -101,7 +103,8 @@
           }
           @media (max-width: 360px) {
             justify-content: space-between;
-            padding-right: 20px;
+
+
           }
         }
       }
