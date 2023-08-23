@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Skill.module.css'
-import {SvgNameSkillsType, SvgSelector} from '../../common/components/svgSelector/SvgSelector';
-import {SkillTitleType} from '../../app/state';
+import {SvgNameSkillsType, SvgSelector} from 'common/components/svgSelector/SvgSelector';
+import {SkillTitleType} from 'app/state';
 
 type SkillPropsType = {
   title: SkillTitleType

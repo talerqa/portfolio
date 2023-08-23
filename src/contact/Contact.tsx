@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import s from './Contact.module.scss'
-import {Title} from '../common/components/title/Title';
-import {ItemLink} from '../footer/ItemLink';
-import {SocialLinksType} from '../app/state';
+import {Title} from 'common/components/title/Title';
+import {ItemLink} from 'footer/ItemLink';
+import {SocialLinksType} from 'app/state';
 import {useForm} from 'react-hook-form';
-import {Button} from '../common/components/button/Button';
+import {Button} from 'common/components/button/Button';
 import {Fade} from 'react-awesome-reveal';
 import emailjs from '@emailjs/browser';
 
@@ -47,7 +47,6 @@ export const Contact = (props: ContactPropsType) => {
     }
   }
 
-  console.log(register('message').pattern)
   return (
     <Fade>
       <div id="contact" className={s.contactBlock}>
@@ -64,11 +63,13 @@ export const Contact = (props: ContactPropsType) => {
               <p className={s.followEmail}>talerqa@gmail.com</p>
               <div className={s.items}>
                 {
-                  props.state.map(itemLink => {
-                    return <ItemLink svgName={itemLink.svgName}
-                                       link={itemLink.href}/>
-                    })
-                  }
+                  props.state.map((itemLink, index) => {
+                    return <ItemLink
+                      key={index}
+                      svgName={itemLink.svgName}
+                      link={itemLink.href}/>
+                  })
+                }
                 </div>
               </div>
               <div className={s.contactForm}>

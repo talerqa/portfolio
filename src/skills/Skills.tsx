@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Skills.module.scss'
 import {Skill} from './skill/Skill';
-import {Title} from '../common/components/title/Title';
-import {SkillsType} from '../app/state';
+import {Title} from 'common/components/title/Title';
+import {SkillsType} from 'app/state';
 import {Fade} from 'react-awesome-reveal';
 
 type SkillsPropsType = {
@@ -16,14 +16,13 @@ export const Skills = (props: SkillsPropsType) => {
         <div className={s.skillsContainer}>
           <Title title={'Skills'}/>
           <div className={s.skills}>
-            {
-              props.state.map(skill => {
-                return <Skill title={skill.title}
-
-                              svgName={skill.svgName}
-                              description={skill.description}/>
-              })
-            }
+            {props.state.map((skill, index) => {
+              return <Skill
+                key={index}
+                title={skill.title}
+                svgName={skill.svgName}
+                description={skill.description}/>
+            })}
           </div>
         </div>
       </div>

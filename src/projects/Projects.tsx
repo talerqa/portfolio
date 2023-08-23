@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './Projects.module.scss'
 import {Project} from './Project/Project';
-import {Title} from '../common/components/title/Title';
+import {Title} from 'common/components/title/Title';
 import {Fade} from 'react-awesome-reveal';
-import {ProjectsType} from './../app/state';
+import {ProjectsType} from 'app/state';
 
 type PropsType = {
   state: Array<ProjectsType>
@@ -16,8 +16,9 @@ export const Projects = (props: PropsType) => {
         <div className={s.projectContainer}>
           <Title title={'My Work'}/>
           <div className={s.projects}>
-            {props.state.map((project) => {
+            {props.state.map((project, index) => {
               return <Project
+                key={index}
                 style={project.backgroundImage}
                 title={project.title}
                 description={project.description}
