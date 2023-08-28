@@ -7,8 +7,6 @@
   position: fixed;
   z-index: 10;
   box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
-
-
 }
 
 
@@ -18,6 +16,7 @@
     justify-content: space-between;
 
     @include container();
+    max-width: 100%;
 
     @media (max-width: 320px) {
       max-width: 100%;
@@ -39,14 +38,7 @@
           color: #656565;
         }
 
-        @media (max-width: 610px) {
-          svg {
-            height: 30px;
-            width: 30px;
-            transition-duration: 0.3s;
-            cursor: pointer;
 
-          }
 
         }
         @media (max-width: 350px) {
@@ -76,5 +68,5 @@
         transition: all 0.8s ease;
       }
     }
-  }
+
 
