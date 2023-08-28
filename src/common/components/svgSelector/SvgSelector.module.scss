@@ -23,6 +23,7 @@
 
   &:focus {
     fill: #000000;
+    transition: all .4s ease;
   }
 }
 
@@ -31,7 +32,7 @@
   transition: all .4s ease;
 
   &:hover {
-    fill: rgba(248, 96, 64, 0.58);
+    fill: rgba(10, 102, 194, 0.89);
     transition: all .4s ease;
   }
 
@@ -45,7 +46,7 @@
   transition: all .4s ease;
 
   &:hover {
-    fill: #b1361e;
+    fill: rgba(10, 102, 194, 0.89);
     transition: all .4s ease;
   }
 
@@ -65,6 +66,7 @@
 
   &:focus {
     fill: transparent;
+    transition: all .4s ease;
   }
 }
 
@@ -73,14 +75,17 @@
   transition: all .4s ease;
 
   &:hover {
+    transition: all .4s ease;
+
     .svgGithubColor {
+      transition: all .4s ease;
       opacity: 1;
       fill: rgba(10, 102, 194, 0.89);
-      transition: all .4s ease;
     }
   }
 
   &:focus {
     fill: #000000;
+    transition: all .4s ease;
   }
 }
