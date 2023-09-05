@@ -16,7 +16,7 @@ export const state: StateType = {
     },
     {
       title: 'linkedin',
-      href: 'https://www.linkedin.com/in/aleksei-tarelko-607862259/',
+      href: 'https://www.linkedin.com/in/aleksei-tarelko/',
       svgName: 'linkedin'
     },
     {
