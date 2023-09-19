@@ -16,7 +16,7 @@ export const state: StateType = {
     },
     {
       title: 'linkedin',
-      href: 'https://www.linkedin.com/in/aleksei-tarelko/',
+      href: 'https://www.linkedin.com/in/talerqa/',
       svgName: 'linkedin'
     },
     {
@@ -126,9 +126,9 @@ export const state: StateType = {
     backgroundImage: {backgroundImage: `url(${socialImg})`}
   },
     {
-      title: 'TodoList',
+      title: 'Task tracker',
       description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list',
-      href: 'https://talerqa.github.io/todolist/',
+      href: 'https://talerqa.github.io/tasktracker/',
       backgroundImage: {backgroundImage: `url(${todoImg})`}
     },
   ]
