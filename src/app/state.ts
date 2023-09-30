@@ -120,9 +120,9 @@ export const state: StateType = {
   ],
 
   projects: [{
-    title: 'Social network',
+    title: 'People Link',
     description: 'An online platform that is used for communication, dating, creating social relationships between people with similar interests or offline connections, as well as for entertainment',
-    href: 'https://talerqa.github.io/samurai-way-main/',
+    href: 'https://talerqa.github.io/peoplelink',
     backgroundImage: {backgroundImage: `url(${socialImg})`}
   },
     {
