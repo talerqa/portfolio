@@ -9,64 +9,64 @@
   box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
 }
 
+.headerContainer {
+  display: flex;
+  background-color: #f8f9fa;
+  justify-content: space-between;
 
-  .headerСontainer {
-    display: flex;
-    background-color: #f8f9fa;
-    justify-content: space-between;
+  @include container();
+  max-width: 100%;
 
-    @include container();
+  @media (max-width: 320px) {
     max-width: 100%;
+  }
 
-    @media (max-width: 320px) {
-      max-width: 100%;
-    }
+  .headerLinks {
+    display: flex;
 
-    .headerLinks {
+    .link {
       display: flex;
+      align-items: center;
+      height: 70px;
+      padding: 0 8px;
+      text-decoration: none;;
+      cursor: pointer;
 
-      .link {
-        display: flex;
-        align-items: center;
-        height: 70px;
-        padding: 0 8px;
-        text-decoration: none;;
-        cursor: pointer;
-
-        &:hover {
-          fill: #656565;
-          color: #656565;
-        }
-
-
-
-        }
-        @media (max-width: 350px) {
-          display: none;
-        }
+      &:hover {
+        fill: #656565;
+        color: #656565;
       }
+
+
     }
 
-    .burgerMenu {
+    @media (max-width: 350px) {
       display: none;
-      background-color: transparent;
-      outline: none;
-      border: none;
-
-      @media (max-width: 785px) {
-        display: flex;
-        align-items: center;
-      }
-
-      .svgItem {
-        opacity: 1;
-        transition: all 0.8s ease;
-      }
-
-      .active {
-        opacity: 0;
-        transition: all 0.8s ease;
-      }
     }
+  }
+}
+
+.burgerMenu {
+  display: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: 785px) {
+    display: flex;
+    align-items: center;
+  }
+
+  .svgItem {
+    opacity: 1;
+    transition: all 0.8s ease;
+  }
+
+  .active {
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+}
 
 

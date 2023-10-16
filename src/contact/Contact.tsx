@@ -22,7 +22,7 @@ export const Contact = (props: ContactPropsType) => {
   const [loading, setLoading] = useState(false);
   const [sending, setSending] = useState<'sending' | 'send' | 'has-been-sent'>('sending');
 
-  const {register, handleSubmit, formState: {errors}, setValue} = useForm<FormData>();
+  const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
   const onSubmit = async (data: FormData) => {
     emailjs.init('Zau9eVPlrX4LfuA0X')
     const serviceId = 'service_r86uw7m';
@@ -37,7 +37,7 @@ export const Contact = (props: ContactPropsType) => {
       })
 
       setSending('send')
-      new Promise(resolve => setTimeout((resolve) => {
+      new Promise(() => setTimeout(() => {
         setSending('has-been-sent')
       }, 1700));
     } catch (e: any) {
@@ -59,8 +59,8 @@ export const Contact = (props: ContactPropsType) => {
                 possible so we can get the most out of our first catch-up.Willing to talk over the phone or in person.
               </p>
               <h3 className={s.followTitle}>FOLLOW ME:</h3>
-              <p className={s.followPhone}>+375-29-754-00-87</p>
-              <p className={s.followEmail}>talerqa@gmail.com</p>
+              <a href="tel:+375297540087" className={s.followPhone}>+375-29-754-00-87</a>
+              <a href="mailto:talerqa@gmail.com" className={s.followEmail}>talerqa@gmail.com</a>
               <div className={s.items}>
                 {
                   props.state.map((itemLink, index) => {
