@@ -10,16 +10,15 @@ import {About} from 'about/About';
 import {state} from './state'
 
 function App() {
-  return (
-    <div className="App">
-      <Header socialLinks={state.socialLinks} navLinks={state.navLinks}/>
-      <Main/>
-      <About/>
-      <Skills state={state.skills}/>
-      <Projects state={state.projects}/>
-      <Contact state={state.socialLinks}/>
-      <Footer/>
-    </div>);
+  return (<div className="App">
+    <Header socialLinks={state.socialLinks} navLinks={state.navLinks}/>
+    <Main/>
+    <About/>
+    <Skills state={state.skills}/>
+    <Projects state={state.projects}/>
+    <Contact state={state.socialLinks}/>
+    <Footer/>
+  </div>);
 }
 
 export default App;
