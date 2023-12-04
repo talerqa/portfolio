@@ -20,6 +20,7 @@ export const Projects = (props: PropsType) => {
             title={project.title}
             description={project.description}
             href={project.href}
+            stack={project.stack}
             hrefLinkToCode={project.hrefLinkToCode}/>
         })}
       </div>

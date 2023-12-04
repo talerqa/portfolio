@@ -1,8 +1,12 @@
-import {SocialSvgLinkType, SvgNameSkillsType} from '../common/components/svgSelector/SvgSelector';
+import {
+  SocialSvgLinkType,
+  SvgNameSkillsType
+} from '../common/components/svgSelector/SvgSelector';
 import todoImg from './../assets/img/todolist.png'
 import socialImg from './../assets/img/socialNetwork.png'
 import shopListImg from './../assets/img/shopList.png'
 import flashCard from './../assets/img/flash-cards.png'
+import crypto from './../assets/img/crypto.png'
 
 export const state: StateType = {
   socialLinks: [
@@ -66,7 +70,7 @@ export const state: StateType = {
       description: 'An open source library that allows you to make HTTP requests.'
     },
     {
-      title: 'Material-ui',
+      title: 'Material-UI / Radix-UI',
       svgName: 'materialUi',
       description: 'A framework that produces ready-made Google solutions for fast and fairly simple web development.'
     },
@@ -108,6 +112,11 @@ export const state: StateType = {
       description: 'A free and open source distributed version control system designed to process any project quickly and efficiently.'
     },
     {
+      title: 'Next JS',
+      svgName: 'nextJs',
+      description: 'The React Framework for the Web.'
+    },
+    {
       title: 'Node JS',
       svgName: 'nodeJs',
       description: 'Node.js is an out-of-browser JavaScript runtime that allows you to write server-side code for web pages and web applications.'
@@ -121,19 +130,14 @@ export const state: StateType = {
     {navTitle: 'Contact', navHref: 'contact', offset: 5},
   ],
 
-  projects: [{
-    title: 'People Link',
-    description: 'An online platform that is used for communication, dating, creating social relationships between people with similar interests or offline connections, as well as for entertainment',
-    href: 'https://talerqa.github.io/peoplelink',
-    backgroundImage: {backgroundImage: `url(${socialImg})`},
-    hrefLinkToCode: 'https://github.com/talerqa/peoplelink',
-  },
+  projects: [
     {
-      title: 'Task tracker',
-      description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list',
-      href: 'https://talerqa.github.io/tasktracker/',
-      backgroundImage: {backgroundImage: `url(${todoImg})`},
-      hrefLinkToCode: 'https://github.com/talerqa/tasktracker',
+      title: 'Card',
+      description: 'An application for working with flashcards that help you learn and remember information. You can create your own cards or choose ready-made ones.',
+      href: 'https://project-card-ruddy.vercel.app',
+      backgroundImage: {backgroundImage: `url(${flashCard})`},
+      hrefLinkToCode: 'https://github.com/talerqa/project-card',
+      stack: 'TypeScript, React, RTK Query'
     },
     {
       title: 'Shopping list',
@@ -141,14 +145,33 @@ export const state: StateType = {
       href: 'https://shop-kappa-vert.vercel.app/',
       backgroundImage: {backgroundImage: `url(${shopListImg})`},
       hrefLinkToCode: 'https://github.com/talerqa/shop',
+      stack: 'TypeScript, React, Redux Toolkit, Node Js (Express Js)'
     },
     {
-      title: 'Card',
-      description: 'An application for working with flashcards that help you learn and remember information. You can create your own cards or choose ready-made ones.',
-      href: 'https://project-card-ruddy.vercel.app',
-      backgroundImage: {backgroundImage: `url(${flashCard})`},
-      hrefLinkToCode: 'https://github.com/talerqa/project-card',
+      title: 'Crypto store',
+      description: 'An application for obtaining current data and analyzing the cryptocurrency market.',
+      href: 'https://crypto-blue-nu.vercel.app/',
+      backgroundImage: {backgroundImage: `url(${crypto})`},
+      hrefLinkToCode: 'https://github.com/talerqa/crypto',
+      stack: 'TypeScript, React, RTK Query'
     },
+    {
+      title: 'Task tracker',
+      description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list',
+      href: 'https://talerqa.github.io/tasktracker/',
+      backgroundImage: {backgroundImage: `url(${todoImg})`},
+      hrefLinkToCode: 'https://github.com/talerqa/tasktracker',
+      stack: 'TypeScript, React, Redux Toolkit'
+    },
+    {
+      title: 'People Link',
+      description: 'An online platform that is used for communication, dating, creating social relationships between people with similar interests or offline connections, as well as for entertainment',
+      href: 'https://talerqa.github.io/peoplelink',
+      backgroundImage: {backgroundImage: `url(${socialImg})`},
+      hrefLinkToCode: 'https://github.com/talerqa/peoplelink',
+      stack: 'TypeScript, React (class components), Redux'
+    },
+
   ]
 }
 
@@ -169,12 +192,13 @@ export type SkillTitleType =
   | 'Redux / Redux Toolkit / RTK Query'
   | 'Axios'
   | 'Git'
-  | 'Material-ui'
+  | 'Material-UI / Radix-UI'
   | 'Postman'
   | 'Storybook'
   | 'Unit Testing'
   | 'Formik / React Hook Form'
   | 'Node JS'
+  | 'Next JS'
 
 
 export type SkillsType = {
@@ -201,4 +225,5 @@ export type ProjectsType = {
   href: string
   backgroundImage: { backgroundImage: string }
   hrefLinkToCode: string
+  stack: string
 }

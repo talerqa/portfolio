@@ -21,7 +21,12 @@ export const Contact = (props: ContactPropsType) => {
   const [loading, setLoading] = useState(false);
   const [sending, setSending] = useState<'sending' | 'send' | 'has-been-sent'>('sending');
 
-  const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
+  const {
+    register,
+    handleSubmit,
+    formState: {errors},
+    reset
+  } = useForm<FormData>();
   const onSubmit = async (data: FormData) => {
     emailjs.init('Zau9eVPlrX4LfuA0X')
     const serviceId = 'service_r86uw7m';
@@ -34,11 +39,11 @@ export const Contact = (props: ContactPropsType) => {
         email: data.email,
         message: data.message,
       })
-
       setSending('send')
       new Promise(() => setTimeout(() => {
         setSending('has-been-sent')
       }, 1700));
+      reset();
     } catch (e: any) {
       throw new Error(e)
     } finally {

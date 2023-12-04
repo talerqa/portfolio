@@ -7,6 +7,7 @@ type ProjectProps = {
   description: string
   href: string
   hrefLinkToCode: string
+  stack: string
 }
 
 export const Project = (props: ProjectProps) => {
@@ -18,8 +19,9 @@ export const Project = (props: ProjectProps) => {
           </div>
         </div>
         <div className={s.information}>
-          <h4 className={s.title}>{props.title}</h4>
+          <h3 className={s.title}>{props.title}</h3>
           <p className={s.description}>{props.description}</p>
+          <h4 className={s.stack}><b>Stack:</b> {props.stack}</h4>
         </div>
       </a>
       <a href={props.hrefLinkToCode} target="_blank" className={s.linkToCode}>
