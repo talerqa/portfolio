@@ -15,7 +15,7 @@ export const About = () => {
               Developer</h2>
             <p className={s.aboutMeText}>I'm a frontend-developer of experience
               with specializing in building a web applications and interfaces
-              using <b> React, Redux (RTK, RTK Query), TypeScript, JavaScript,
+              using <b> React, Next js, Redux (RTK, RTK Query), TypeScript, JavaScript,
                 HTML&CSS, and SCSS.</b>
               With
               a strong understanding of web development principles and best
@@ -26,7 +26,7 @@ export const About = () => {
               <b> I am always eager to
                 take on new challenges and contribute to
                 innovative projects in the front-end development field. </b> I
-              have a keen interest in mastering <b>Node.js and Next.js.</b>
+              have a keen interest in mastering <b>Node.js.</b>
             </p>
           </div>
           <div className={s.aboutMeInfo}>
