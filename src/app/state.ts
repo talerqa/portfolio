@@ -1,9 +1,5 @@
-import {
-  SocialSvgLinkType,
-  SvgNameSkillsType
-} from '../common/components/svgSelector/SvgSelector';
+import {SocialSvgLinkType, SvgNameSkillsType} from '../common/components/svgSelector/SvgSelector';
 import todoImg from './../assets/img/todolist.png'
-import socialImg from './../assets/img/socialNetwork.png'
 import shopListImg from './../assets/img/shopList.png'
 import flashCard from './../assets/img/flash-cards.png'
 import crypto from './../assets/img/crypto.png'
@@ -163,15 +159,6 @@ export const state: StateType = {
       hrefLinkToCode: 'https://github.com/talerqa/tasktracker',
       stack: 'TypeScript, React, Redux Toolkit'
     },
-    {
-      title: 'People Link',
-      description: 'An online platform that is used for communication, dating, creating social relationships between people with similar interests or offline connections, as well as for entertainment',
-      href: 'https://talerqa.github.io/peoplelink',
-      backgroundImage: {backgroundImage: `url(${socialImg})`},
-      hrefLinkToCode: 'https://github.com/talerqa/peoplelink',
-      stack: 'TypeScript, React (class components), Redux'
-    },
-
   ]
 }
 
